@@ -1,0 +1,3 @@
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles/IHeap.dir

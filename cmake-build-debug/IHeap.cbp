@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="IHeap"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="IHeap">
+				<Option output="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/IHeap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/romanklimovitskiy/googletest/googletest/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 IHeap"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="IHeap/fast">
+				<Option output="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/IHeap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/romanklimovitskiy/googletest/googletest/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 IHeap/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/romanklimovitskiy/Documents/Программирование/Продвинутый\ поток/IHeap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinHeap.cpp">
+			<Option target="IHeap"/>
+		</Unit>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinHeap.h">
+			<Option target="IHeap"/>
+		</Unit>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinTree.cpp">
+			<Option target="IHeap"/>
+		</Unit>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinTree.h">
+			<Option target="IHeap"/>
+		</Unit>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/IHeap.h">
+			<Option target="IHeap"/>
+		</Unit>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftHeap.cpp">
+			<Option target="IHeap"/>
+		</Unit>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftHeap.h">
+			<Option target="IHeap"/>
+		</Unit>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistNode.cpp">
+			<Option target="IHeap"/>
+		</Unit>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistNode.h">
+			<Option target="IHeap"/>
+		</Unit>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.cpp">
+			<Option target="IHeap"/>
+		</Unit>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.h">
+			<Option target="IHeap"/>
+		</Unit>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewNode.cpp">
+			<Option target="IHeap"/>
+		</Unit>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewNode.h">
+			<Option target="IHeap"/>
+		</Unit>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandartHeap.cpp">
+			<Option target="IHeap"/>
+		</Unit>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandartHeap.h">
+			<Option target="IHeap"/>
+		</Unit>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/main.cpp">
+			<Option target="IHeap"/>
+		</Unit>
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
