@@ -6,23 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinHeap.cpp
-BinHeap.h
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinHeap.h
-
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinHeap.h
-IHeap.h
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/IHeap.h
-BinTree.h
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinTree.h
-list
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialHeap.cpp
+BinomialHeap.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialHeap.h
+cassert
 -
 
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinTree.cpp
-BinTree.h
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinTree.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialHeap.h
+list
+-
+IHeap.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/IHeap.h
+BinomialTree.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialTree.h
 
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinTree.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialTree.cpp
+BinomialTree.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialTree.h
+
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialTree.h
 vector
 -
 iostream
@@ -30,13 +32,13 @@ iostream
 
 /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/IHeap.h
 
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftHeap.cpp
-LeftHeap.h
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftHeap.h
-iostream
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.cpp
+LeftistHeap.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.h
+cassert
 -
 
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftHeap.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.h
 IHeap.h
 /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/IHeap.h
 LeftistNode.h
@@ -53,6 +55,8 @@ iostream
 /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.cpp
 SkewHeap.h
 /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.h
+cassert
+-
 
 /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.h
 SkewNode.h
@@ -71,6 +75,8 @@ iostream
 /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandartHeap.cpp
 StandartHeap.h
 /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandartHeap.h
+cassert
+-
 
 /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandartHeap.h
 iostream
@@ -87,10 +93,10 @@ vector
 -
 fstream
 -
-BinHeap.h
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinHeap.h
-LeftHeap.h
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftHeap.h
+BinomialHeap.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialHeap.h
+LeftistHeap.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.h
 SkewHeap.h
 /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.h
 StandartHeap.h

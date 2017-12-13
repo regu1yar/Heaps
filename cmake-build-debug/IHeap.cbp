@@ -80,25 +80,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinHeap.cpp">
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialHeap.cpp">
 			<Option target="IHeap"/>
 		</Unit>
-		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinHeap.h">
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialHeap.h">
 			<Option target="IHeap"/>
 		</Unit>
-		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinTree.cpp">
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialTree.cpp">
 			<Option target="IHeap"/>
 		</Unit>
-		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinTree.h">
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialTree.h">
 			<Option target="IHeap"/>
 		</Unit>
 		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/IHeap.h">
 			<Option target="IHeap"/>
 		</Unit>
-		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftHeap.cpp">
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.cpp">
 			<Option target="IHeap"/>
 		</Unit>
-		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftHeap.h">
+		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.h">
 			<Option target="IHeap"/>
 		</Unit>
 		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistNode.cpp">

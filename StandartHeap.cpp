@@ -3,6 +3,7 @@
 //
 
 #include "StandartHeap.h"
+#include <cassert>
 
 StandartHeap::StandartHeap() { }
 
@@ -11,18 +12,24 @@ void StandartHeap::insert(int key) {
 }
 
 int StandartHeap::getMin() const {
+    assert(!data.empty());
     return *data.begin();
 }
 
 void StandartHeap::extractMin() {
+    assert(!data.empty());
     data.erase(data.begin());
 }
 
 void StandartHeap::meld(IHeap &heap) {
-    if(this == &heap) {
+    StandartHeap& newHeap = dynamic_cast<StandartHeap&>(heap);
+    if(this == &newHeap || newHeap.empty()) {
         return;
     }
-    StandartHeap& newHeap = dynamic_cast<StandartHeap&>(heap);
+    if(data.empty()) {
+        data = newHeap.data;
+        return;
+    }
     data.insert(newHeap.data.begin(), newHeap.data.end());
 }
 
@@ -36,3 +43,5 @@ void StandartHeap::print() const {
 void StandartHeap::clear() { data.clear(); }
 
 bool StandartHeap::empty() const { return data.empty(); }
+
+StandartHeap::~StandartHeap() { }

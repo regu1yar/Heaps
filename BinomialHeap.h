@@ -2,23 +2,22 @@
 // Created by Роман Климовицкий on 07.12.2017.
 //
 
-#ifndef IHEAP_BINHEAP_H
-#define IHEAP_BINHEAP_H
+#ifndef IHEAP_BINOMIALHEAP_H
+#define IHEAP_BINOMIALHEAP_H
 
 
+#include <list>
 #include "IHeap.h"
-#include "BinTree.h"
+#include "BinomialTree.h"
 
-class BinHeap : public IHeap {
+class BinomialHeap : public IHeap {
 private:
-    BinTree* firstTree;
-
-    void addTree(BinTree* bTree);
+    std::list<BinomialTree> trees;
 
 public:
-    BinHeap();
-    explicit BinHeap(int key);
-    explicit BinHeap(BinTree* tree);
+    BinomialHeap();
+    explicit BinomialHeap(int key);
+    explicit BinomialHeap(BinomialTree& tree);
     virtual void insert(int key);
     virtual int getMin() const;
     virtual void extractMin();
@@ -26,7 +25,8 @@ public:
     virtual void clear();
     virtual void print() const;
     virtual bool empty() const;
+    virtual ~BinomialHeap();
 };
 
 
-#endif //IHEAP_BINHEAP_H
+#endif //IHEAP_BINOMIALHEAP_H

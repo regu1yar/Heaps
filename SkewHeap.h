@@ -27,7 +27,7 @@ public:
     virtual void clear();
     virtual void print() const;
     virtual bool empty() const;
-     ~SkewHeap();
+    virtual ~SkewHeap();
 };
 
 

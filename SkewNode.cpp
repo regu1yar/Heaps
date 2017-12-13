@@ -8,20 +8,17 @@ SkewNode::SkewNode(int key, SkewNode *skewNode1, SkewNode *skewNode2) : key(key)
                                                                         rightNode(skewNode2) {}
 
 void SkewNode::swapChildren() {
-    SkewNode* tmp = leftNode;
-    leftNode = rightNode;
-    rightNode = tmp;
+    std::swap(leftNode, rightNode);
 }
 
 void SkewNode::print() {
-    std::cout << key << ' ';
-    std::cout << "TO LEFT" << std::endl;
+    std::cout << '(';
     if(leftNode != nullptr) {
         leftNode->print();
     }
-    //std::cout << std::endl;
-    std::cout << "TO RIGHT" << std::endl;
+    std::cout << ' ' << key << ' ';
     if(rightNode != nullptr) {
         rightNode->print();
     }
+    std::cout << ')';
 }

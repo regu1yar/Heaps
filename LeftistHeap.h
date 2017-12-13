@@ -9,7 +9,7 @@
 #include "IHeap.h"
 #include "LeftistNode.h"
 
-class LeftHeap : public IHeap {
+class LeftistHeap : public IHeap {
 private:
     LeftistNode* root;
 
@@ -17,9 +17,7 @@ private:
     void clearNode(LeftistNode* node);
 
 public:
-    LeftHeap();
-    LeftHeap(const LeftHeap& heap);
-    LeftHeap& operator=(const LeftHeap& heap);
+    LeftistHeap();
     virtual void insert(int key);
     virtual int getMin() const;
     virtual void extractMin();
@@ -27,7 +25,7 @@ public:
     virtual void clear();
     virtual void print() const;
     virtual bool empty() const;
-    ~LeftHeap();
+    virtual ~LeftistHeap();
 };
 
 

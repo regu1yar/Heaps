@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinHeap.cpp" "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles/IHeap.dir/BinHeap.cpp.o"
-  "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinTree.cpp" "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles/IHeap.dir/BinTree.cpp.o"
-  "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftHeap.cpp" "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles/IHeap.dir/LeftHeap.cpp.o"
+  "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialHeap.cpp" "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles/IHeap.dir/BinomialHeap.cpp.o"
+  "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialTree.cpp" "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles/IHeap.dir/BinomialTree.cpp.o"
+  "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.cpp" "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles/IHeap.dir/LeftistHeap.cpp.o"
   "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistNode.cpp" "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles/IHeap.dir/LeftistNode.cpp.o"
   "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.cpp" "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles/IHeap.dir/SkewHeap.cpp.o"
   "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewNode.cpp" "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles/IHeap.dir/SkewNode.cpp.o"

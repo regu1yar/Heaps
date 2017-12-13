@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
-#include "BinHeap.h"
-#include "LeftHeap.h"
+#include "BinomialHeap.h"
+#include "LeftistHeap.h"
 #include "SkewHeap.h"
 #include "StandartHeap.h"
 #include "gtest/gtest.h"
@@ -12,15 +12,77 @@ const int HEAP_TYPES = 3;
 const int TEST_TYPES = 5;
 const int MIN_KEY = -1000;
 const int MAX_KEY = 1000;
-const int TESTS = 1000;
+const int TESTS = 10000;
 
 enum Method {
-    AddHeap = 0,
+    AddHeap,
     Insert,
     GetMin,
     ExtractMin,
     Meld
 };
+
+void testGeneration(int tests) {
+    std::filebuf testBuf;
+    testBuf.open("tests.txt", std::ios::out);
+    std::ostream testStream(&testBuf);
+    std::vector<int> heaps;
+    for(int i = 1; i <= tests; ++i) {
+        int test = rand() % TEST_TYPES;
+        switch(test) {
+            case AddHeap: {
+                int addKey = rand() % (MAX_KEY - MIN_KEY + 1) + MIN_KEY;
+                testStream << test << ' ' << addKey << ' ' << 0 << std::endl;
+                heaps.push_back(1);
+                break;
+            }
+            case Insert: {
+                if (heaps.size() != 0) {
+                    int insertIndex = rand() % heaps.size();
+                    int insertKey = rand() % (MAX_KEY - MIN_KEY + 1) + MIN_KEY;
+                    testStream << test << ' ' << insertIndex << ' ' << insertKey << std::endl;
+                    ++(heaps[insertIndex]);
+                }
+                break;
+            }
+            case GetMin: {
+                if (heaps.size() != 0) {
+                    int getIndex = rand() % heaps.size();
+                    if(heaps[getIndex] != 0) {
+                        testStream << test << ' ' << getIndex << ' ' << 0 << std::endl;
+                    }
+                }
+                break;
+            }
+            case ExtractMin: {
+                if (heaps.size() != 0) {
+                    int extractIndex = rand() % heaps.size();
+                    if(heaps[extractIndex] != 0) {
+                        testStream << test << ' ' << extractIndex << ' ' << 0 << std::endl;
+                        --(heaps[extractIndex]);
+                    }
+                }
+                break;
+            }
+            case Meld: {
+                if (heaps.size() != 0) {
+                    int meldIndex1 = rand() % heaps.size();
+                    int meldIndex2 = rand() % heaps.size();
+                    testStream << test << ' ' << meldIndex1 << ' ' << meldIndex2 << std::endl;
+                    if (meldIndex1 != meldIndex2) {
+                        heaps[meldIndex1] += heaps[meldIndex2];
+                        heaps.erase(heaps.begin() + meldIndex2);
+                    }
+                }
+                break;
+            }
+            default:
+                assert(false);
+                break;
+        }
+    }
+    testBuf.close();
+}
 
 class FunctionalTest : public ::testing::Test {
 protected:
@@ -75,9 +137,9 @@ protected:
 void FunctionalTest::callAddHeap(int heapNumber, int key) {
     IHeap* newHeap;
     if(heapNumber == 0) {
-        newHeap = new BinHeap;
+        newHeap = new BinomialHeap;
     } else if(heapNumber == 1) {
-        newHeap = new LeftHeap;
+        newHeap = new LeftistHeap;
     } else {
         newHeap = new SkewHeap;
     }
@@ -94,8 +156,8 @@ void FunctionalTest::callAddHeap(int heapNumber, int key) {
 
 void FunctionalTest::callInsert(int heapNumber, int index, int key) {
     if(index >= stdHeaps.size()) {
-        std::cout << "UNSUCCESSFUL INSERT(" << index << ") : SIZE == " << stdHeaps.size() << " <= "
-                  << index << " == INDEX" << std::endl;
+        std::cout << "UNSUCCESSFUL INSERT(" << index << ") : SIZE == " << stdHeaps.size() << " <= " << index
+                  << " == INDEX" << std::endl;
         return;
     }
     heaps[heapNumber][index]->insert(key);
@@ -107,8 +169,13 @@ void FunctionalTest::callInsert(int heapNumber, int index, int key) {
 }
 
 void FunctionalTest::callGetMin(int heapNumber, int index) {
-    if(stdHeaps.empty()) {
-        std::cout << "UNSUCCESSFUL GETMIN() : HEAP IS EMPTY" << std::endl;
+    if(index >= stdHeaps.size()) {
+        std::cout << "UNSUCCESSFUL GETMIN(" << index << ") : SIZE == " << stdHeaps.size() << " <= " << index
+                  << " == INDEX" << std::endl;
+        return;
+    }
+    if(stdHeaps[index]->empty()) {
+        std::cout << "UNSUCCESSFUL GETMIN(" << index << ") : HEAP IS EMPTY" << std::endl;
         return;
     }
     int heapMin_getMin = heaps[heapNumber][index]->getMin();
@@ -121,6 +188,10 @@ void FunctionalTest::callExtractMin(int heapNumber, int index) {
     if(index >= stdHeaps.size()) {
         std::cout << "UNSUCCESSFUL EXTRACTMIN(" << index << ") : SIZE == " << stdHeaps.size() << " <= "
                   << index << " == INDEX" << std::endl;
+        return;
+    }
+    if(stdHeaps[index]->empty()) {
+        std::cout << "UNSUCCESSFUL EXTRACTMIN(" << index << ") : HEAP IS EMPTY" << std::endl;
         return;
     }
     heaps[heapNumber][index]->extractMin();
@@ -151,122 +222,64 @@ void FunctionalTest::callMeld(int heapNumber, int index1, int index2) {
     }
     heaps[heapNumber][index1]->meld(*heaps[heapNumber][index2]);
     stdHeaps[index1]->meld(*stdHeaps[index2]);
-    int heapMin_meld = heaps[heapNumber][index1]->getMin();
-    int stdHeapMin_meld = stdHeaps[index1]->getMin();
-    EXPECT_EQ(heapMin_meld, stdHeapMin_meld) << "HEAP # " << heapNumber << " HEAPMIN == " << heapMin_meld << " != "
-                                             << stdHeapMin_meld << " == STDHEAPMIN AFTER MELDING" << std::endl;
-    if(index1 != index2) {
-        std::swap(heaps[heapNumber][index2], heaps[heapNumber].back());
-        delete heaps[heapNumber].back();
-        heaps[heapNumber].pop_back();
-        std::swap(stdHeaps[index2], stdHeaps.back());
-        delete stdHeaps.back();
-        stdHeaps.pop_back();
+    bool heapEmptyness = stdHeaps[index1]->empty();
+    bool stdHeapEmtyness = heaps[heapNumber][index1]->empty();
+    ASSERT_EQ(heapEmptyness, stdHeapEmtyness) << "HEAP # " << heapNumber << " HEAPEMPTY == " << heapEmptyness << " != "
+                                              << stdHeapEmtyness << " == STDHEAPEMPTY AFTER MELDING" << std::endl;
+    if(!heapEmptyness && !stdHeapEmtyness) {
+        int heapMin_meld = heaps[heapNumber][index1]->getMin();
+        int stdHeapMin_meld = stdHeaps[index1]->getMin();
+        EXPECT_EQ(heapMin_meld, stdHeapMin_meld) << "HEAP # " << heapNumber << " HEAPMIN == " << heapMin_meld << " != "
+                                                 << stdHeapMin_meld << " == STDHEAPMIN AFTER MELDING" << std::endl;
+        if (index1 != index2) {
+            std::swap(heaps[heapNumber][index2], heaps[heapNumber].back());
+            delete heaps[heapNumber].back();
+            heaps[heapNumber].pop_back();
+            std::swap(stdHeaps[index2], stdHeaps.back());
+            delete stdHeaps.back();
+            stdHeaps.pop_back();
+        }
     }
 }
 
 TEST_F(FunctionalTest, test) {
-    freopen("tests.txt", "r", stdin);
     std::filebuf timeBuf;
     timeBuf.open("time.txt", std::ios::out);
+    std::ifstream in;
     std::ostream timeStream(&timeBuf);
-    for(int i = 0 ; i < 3; ++i) {
-        int test, param1, param2;
-        long long begin = clock();
-        while(std::cin >> test >> param1 >> param2) {
-            callMethod(i, (Method)test, param1, param2);
+    for(int tests = TESTS / 100; tests <= TESTS; tests += TESTS / 100) {
+        testGeneration(tests);
+        timeStream << tests << " operations:" << std::endl;
+        for(int i = 0 ; i < 3; ++i) {
+            in.open("tests.txt");
+            int test, param1, param2;
+            long long begin = clock();
+            while(in >> test >> param1 >> param2) {
+                callMethod(i, (Method)test, param1, param2);
+            }
+            long long end = clock();
+            if(i == 0) {
+                timeStream << "Binomial Heap";
+            } else if(i == 1) {
+                timeStream << "Leftist Heap";
+            } else {
+                timeStream << "Skew Heap";
+            }
+            timeStream << ": clocks - " << end - begin << " seconds - " << (double)(end - begin) / CLOCKS_PER_SEC
+                       << std::endl;
+            heaps[i].clear();
+            stdHeaps.clear();
+            in.close();
+            in.clear();
         }
-        long long end = clock();
-        timeStream << "Heap # " << i << ": clocks - " << end - begin << " time - " << (end - begin) / CLOCKS_PER_SEC
-                   << std::endl;
-        stdHeaps.clear();
+        timeStream << std::endl;
     }
+    timeBuf.close();
 }
 
-void testGeneration() {
-    std::filebuf testBuf;
-    testBuf.open("tests.txt", std::ios::out);
-    std::ostream testStream(&testBuf);
-    int heapsSize = 0;
-    for(int i = 1; i <= TESTS; ++i) {
-        int test = rand() % TEST_TYPES;
-        switch(test) {
-            case 0: {
-                int addKey = rand() % (MAX_KEY - MIN_KEY + 1) + MIN_KEY;
-                testStream << test << ' ' << addKey << ' ' << 0 << std::endl;
-                ++heapsSize;
-                break;
-            }
-            case 1: {
-                if (heapsSize != 0) {
-                    int insertIndex = rand() % heapsSize;
-                    int insertKey = rand() % (MAX_KEY - MIN_KEY + 1) + MIN_KEY;
-                    testStream << test << ' ' << insertIndex << ' ' << insertKey << std::endl;
-                }
-                break;
-            }
-            case 2: {
-                if (heapsSize != 0) {
-                    int getIndex = rand() % heapsSize;
-                    testStream << test << ' ' << getIndex << ' ' << 0 << std::endl;
-                }
-                break;
-            }
-            case 3: {
-                if (heapsSize != 0) {
-                    int extractIndex = rand() % heapsSize;
-                    testStream << test << ' ' << extractIndex << ' ' << 0 << std::endl;
-                }
-                break;
-            }
-            case 4: {
-                if (heapsSize != 0) {
-                    int melIndex1 = rand() % heapsSize;
-                    int melIndex2 = rand() % heapsSize;
-                    testStream << test << ' ' << melIndex1 << ' ' << melIndex2 << std::endl;
-                    if (melIndex1 != melIndex2) {
-                        --heapsSize;
-                    }
-                }
-                break;
-            }
-            default:
-                testStream << 0 << ' ' << 0 << ' ' << 0 << std::endl;
-        }
-    }
-    testBuf.close();
-}
-
-//int main(int argc, char **argv) {
-//    srand(time(NULL));
-//    testGeneration();
-//    ::testing::InitGoogleTest(&argc, argv);
-//    return RUN_ALL_TESTS();
-//}
-
-int main() {
+int main(int argc, char **argv) {
     srand(time(NULL));
-    BinHeap heap1;
-    StandartHeap heap2;
-    for(int i = 10; i >= 0; --i) {
-        int tmp = rand() % 20;
-        heap1.insert(tmp);
-        std::cout << tmp << ' ' << heap1.getMin() << std::endl;
-    }
-    heap1.print();
-    for(int i = 10; i >= 0; --i) {
-        heap1.extractMin();
-        std::cout << heap1.getMin() << std::endl;
-    }
-//    for(int i = 0; i < 9; ++i) {
-//        heap1.extractMin();
-//        heap1.print();
-//    }
-//    for(int i = 0; i < 10; ++i) {
-//        heap2.insert(rand() % 20);
-//    }
-//    heap2.print();
-//    heap1.meld(heap2);
-//    heap1.print();
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }
 

@@ -23,6 +23,7 @@ public:
     virtual void print() const;
     virtual void clear();
     virtual bool empty() const;
+    virtual ~StandartHeap();
 };
 
 

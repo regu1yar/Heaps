@@ -1,13 +1,13 @@
 //
-// Created by Роман Климовицкий on 10.12.2017.
+// Created by Роман Климовицкий on 08.12.2017.
 //
 
-#include "SkewHeap.h"
+#include "LeftistHeap.h"
 #include <cassert>
 
-SkewHeap::SkewHeap() : root(nullptr) { }
+LeftistHeap::LeftistHeap() : root(nullptr) { }
 
-void SkewHeap::clearNode(SkewNode *node) {
+void LeftistHeap::clearNode(LeftistNode *node) {
     if(node != nullptr) {
         clearNode(node->leftNode);
         clearNode(node->rightNode);
@@ -15,21 +15,21 @@ void SkewHeap::clearNode(SkewNode *node) {
     }
 }
 
-void SkewHeap::insert(int key) { root = systemMeld(root, new SkewNode(key)); }
+void LeftistHeap::insert(int key) { root = systemMeld(root, new LeftistNode(key)); }
 
-int SkewHeap::getMin() const {
+int LeftistHeap::getMin() const {
     assert(root != nullptr);
     return root->key;
 }
 
-void SkewHeap::extractMin() {
+void LeftistHeap::extractMin() {
     assert(root != nullptr);
-    SkewNode* oldRoot = root;
+    LeftistNode* oldRoot = root;
     root = systemMeld(root->leftNode, root->rightNode);
     delete oldRoot;
 }
 
-SkewNode* SkewHeap::systemMeld(SkewNode *node1, SkewNode *node2) {
+LeftistNode* LeftistHeap::systemMeld(LeftistNode *node1, LeftistNode *node2) {
     if(node1 == nullptr) {
         return node2;
     }
@@ -40,12 +40,12 @@ SkewNode* SkewHeap::systemMeld(SkewNode *node1, SkewNode *node2) {
         std::swap(node1, node2);
     }
     node1->rightNode = systemMeld(node1->rightNode, node2);
-    node1->swapChildren();
+    node1->update();
     return node1;
 }
 
-void SkewHeap::meld(IHeap &heap) {
-    SkewHeap& newHeap = dynamic_cast<SkewHeap&>(heap);
+void LeftistHeap::meld(IHeap &heap) {
+    LeftistHeap& newHeap = dynamic_cast<LeftistHeap&>(heap);
     if(this == &heap) {
         return;
     }
@@ -53,19 +53,20 @@ void SkewHeap::meld(IHeap &heap) {
     newHeap.root = nullptr;
 }
 
-void SkewHeap::clear() {
+void LeftistHeap::clear() {
     clearNode(root);
     root = nullptr;
 }
 
-void SkewHeap::print() const {
+void LeftistHeap::print() const {
     if(root != nullptr) {
         root->print();
     }
 }
 
-bool SkewHeap::empty() const { return root == nullptr; }
+bool LeftistHeap::empty() const { return root == nullptr; }
 
-SkewHeap::~SkewHeap() {
+LeftistHeap::~LeftistHeap() {
     clear();
 }
+

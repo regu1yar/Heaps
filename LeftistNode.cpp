@@ -10,11 +10,7 @@ LeftistNode::LeftistNode(int key, LeftistNode *leftistNode1,
 
 void LeftistNode::update() {
     if(leftNode == nullptr) {
-        if(rightNode != nullptr) {
-            LeftistNode* tmp = rightNode;
-            rightNode = leftNode;
-            leftNode = tmp;
-        }
+        std::swap(leftNode, rightNode);
         rank = 1;
         return;
     }
@@ -23,22 +19,19 @@ void LeftistNode::update() {
         return;
     }
     if(leftNode->rank < rightNode->rank) {
-        LeftistNode* tmp = rightNode;
-        rightNode = leftNode;
-        leftNode = tmp;
+        std::swap(leftNode, rightNode);
     }
     rank = rightNode->rank + 1;
 }
 
 void LeftistNode::print() {
-    std::cout << key << ' ';
-    std::cout << "TO LEFT" << std::endl;
+    std::cout << '(';
     if(leftNode != nullptr) {
         leftNode->print();
     }
-    //std::cout << std::endl;
-    std::cout << "TO RIGHT" << std::endl;
+    std::cout << ' ' << key << ' ';
     if(rightNode != nullptr) {
         rightNode->print();
     }
+    std::cout << ')';
 }

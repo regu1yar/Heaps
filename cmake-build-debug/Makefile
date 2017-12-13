@@ -123,86 +123,86 @@ IHeap/fast:
 	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/build
 .PHONY : IHeap/fast
 
-BinHeap.o: BinHeap.cpp.o
+BinomialHeap.o: BinomialHeap.cpp.o
 
-.PHONY : BinHeap.o
-
-# target to build an object file
-BinHeap.cpp.o:
-	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/BinHeap.cpp.o
-.PHONY : BinHeap.cpp.o
-
-BinHeap.i: BinHeap.cpp.i
-
-.PHONY : BinHeap.i
-
-# target to preprocess a source file
-BinHeap.cpp.i:
-	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/BinHeap.cpp.i
-.PHONY : BinHeap.cpp.i
-
-BinHeap.s: BinHeap.cpp.s
-
-.PHONY : BinHeap.s
-
-# target to generate assembly for a file
-BinHeap.cpp.s:
-	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/BinHeap.cpp.s
-.PHONY : BinHeap.cpp.s
-
-BinTree.o: BinTree.cpp.o
-
-.PHONY : BinTree.o
+.PHONY : BinomialHeap.o
 
 # target to build an object file
-BinTree.cpp.o:
-	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/BinTree.cpp.o
-.PHONY : BinTree.cpp.o
+BinomialHeap.cpp.o:
+	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/BinomialHeap.cpp.o
+.PHONY : BinomialHeap.cpp.o
 
-BinTree.i: BinTree.cpp.i
+BinomialHeap.i: BinomialHeap.cpp.i
 
-.PHONY : BinTree.i
+.PHONY : BinomialHeap.i
 
 # target to preprocess a source file
-BinTree.cpp.i:
-	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/BinTree.cpp.i
-.PHONY : BinTree.cpp.i
+BinomialHeap.cpp.i:
+	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/BinomialHeap.cpp.i
+.PHONY : BinomialHeap.cpp.i
 
-BinTree.s: BinTree.cpp.s
+BinomialHeap.s: BinomialHeap.cpp.s
 
-.PHONY : BinTree.s
+.PHONY : BinomialHeap.s
 
 # target to generate assembly for a file
-BinTree.cpp.s:
-	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/BinTree.cpp.s
-.PHONY : BinTree.cpp.s
+BinomialHeap.cpp.s:
+	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/BinomialHeap.cpp.s
+.PHONY : BinomialHeap.cpp.s
 
-LeftHeap.o: LeftHeap.cpp.o
+BinomialTree.o: BinomialTree.cpp.o
 
-.PHONY : LeftHeap.o
+.PHONY : BinomialTree.o
 
 # target to build an object file
-LeftHeap.cpp.o:
-	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/LeftHeap.cpp.o
-.PHONY : LeftHeap.cpp.o
+BinomialTree.cpp.o:
+	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/BinomialTree.cpp.o
+.PHONY : BinomialTree.cpp.o
 
-LeftHeap.i: LeftHeap.cpp.i
+BinomialTree.i: BinomialTree.cpp.i
 
-.PHONY : LeftHeap.i
+.PHONY : BinomialTree.i
 
 # target to preprocess a source file
-LeftHeap.cpp.i:
-	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/LeftHeap.cpp.i
-.PHONY : LeftHeap.cpp.i
+BinomialTree.cpp.i:
+	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/BinomialTree.cpp.i
+.PHONY : BinomialTree.cpp.i
 
-LeftHeap.s: LeftHeap.cpp.s
+BinomialTree.s: BinomialTree.cpp.s
 
-.PHONY : LeftHeap.s
+.PHONY : BinomialTree.s
 
 # target to generate assembly for a file
-LeftHeap.cpp.s:
-	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/LeftHeap.cpp.s
-.PHONY : LeftHeap.cpp.s
+BinomialTree.cpp.s:
+	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/BinomialTree.cpp.s
+.PHONY : BinomialTree.cpp.s
+
+LeftistHeap.o: LeftistHeap.cpp.o
+
+.PHONY : LeftistHeap.o
+
+# target to build an object file
+LeftistHeap.cpp.o:
+	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/LeftistHeap.cpp.o
+.PHONY : LeftistHeap.cpp.o
+
+LeftistHeap.i: LeftistHeap.cpp.i
+
+.PHONY : LeftistHeap.i
+
+# target to preprocess a source file
+LeftistHeap.cpp.i:
+	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/LeftistHeap.cpp.i
+.PHONY : LeftistHeap.cpp.i
+
+LeftistHeap.s: LeftistHeap.cpp.s
+
+.PHONY : LeftistHeap.s
+
+# target to generate assembly for a file
+LeftistHeap.cpp.s:
+	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/LeftistHeap.cpp.s
+.PHONY : LeftistHeap.cpp.s
 
 LeftistNode.o: LeftistNode.cpp.o
 
@@ -348,15 +348,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... IHeap"
-	@echo "... BinHeap.o"
-	@echo "... BinHeap.i"
-	@echo "... BinHeap.s"
-	@echo "... BinTree.o"
-	@echo "... BinTree.i"
-	@echo "... BinTree.s"
-	@echo "... LeftHeap.o"
-	@echo "... LeftHeap.i"
-	@echo "... LeftHeap.s"
+	@echo "... BinomialHeap.o"
+	@echo "... BinomialHeap.i"
+	@echo "... BinomialHeap.s"
+	@echo "... BinomialTree.o"
+	@echo "... BinomialTree.i"
+	@echo "... BinomialTree.s"
+	@echo "... LeftistHeap.o"
+	@echo "... LeftistHeap.i"
+	@echo "... LeftistHeap.s"
 	@echo "... LeftistNode.o"
 	@echo "... LeftistNode.i"
 	@echo "... LeftistNode.s"
