@@ -22,6 +22,74 @@ enum Method {
     Meld
 };
 
+class FunctionalTest : public ::testing::Test {
+protected:
+    BinomialHeap binomialHeap;
+    LeftistHeap leftistHeap;
+    SkewHeap skewHeap;
+    StandartHeap stdHeap;
+
+    void SetUp() {
+        std::cout << "SET UP" << std::endl;
+    }
+
+    void TearDown() {
+        binomialHeap.clear();
+        leftistHeap.clear();
+        skewHeap.clear();
+        stdHeap.clear();
+        std::cout << "TEARED DOWN" << std::endl;
+    }
+};
+
+TEST_F(FunctionalTest, InsertTest) {
+    for(size_t i = TESTS / 100; i <= TESTS; i += TESTS / 100) {
+        for(size_t j = 0; j < i; ++j) {
+            int key = rand() % (MAX_KEY - MIN_KEY + 1) + MIN_KEY;
+            binomialHeap.insert(key);
+            leftistHeap.insert(key);
+            skewHeap.insert(key);
+            stdHeap.insert(key);
+            EXPECT_EQ(binomialHeap.getMin(), stdHeap.getMin()) << "BAD INSERT ON BINOMIAL HEAP" << std::endl;
+            EXPECT_EQ(leftistHeap.getMin(), stdHeap.getMin()) << "BAD INSERT ON LEFTIST HEAP" << std::endl;
+            EXPECT_EQ(skewHeap.getMin(), stdHeap.getMin()) << "BAD INSERT ON SKEW HEAP" << std::endl;
+        }
+        binomialHeap.clear();
+        leftistHeap.clear();
+        skewHeap.clear();
+        stdHeap.clear();
+        std::cout << "INSERT TEST " << i / (TESTS / 100) << " PASSED" << std::endl;
+    }
+}
+
+TEST_F(FunctionalTest, ExtractMinTest) {
+    for(size_t i = 10; i <= 100; i += 10) {
+        for(size_t j = 0; j < i; ++j) {
+            int key = rand() % (MAX_KEY - MIN_KEY + 1) + MIN_KEY;
+            binomialHeap.insert(key);
+            leftistHeap.insert(key);
+            skewHeap.insert(key);
+            stdHeap.insert(key);
+        }
+        while(!stdHeap.empty()) {
+            binomialHeap.extractMin();
+            leftistHeap.extractMin();
+            skewHeap.extractMin();
+            stdHeap.extractMin();
+            if(!stdHeap.empty()) {
+                EXPECT_EQ(binomialHeap.getMin(), stdHeap.getMin()) << "BAD EXTRACTMIN ON BINOMIAL HEAP" << std::endl;
+                EXPECT_EQ(leftistHeap.getMin(), stdHeap.getMin()) << "BAD EXTRACTMIN ON LEFTIST HEAP" << std::endl;
+                EXPECT_EQ(skewHeap.getMin(), stdHeap.getMin()) << "BAD EXTRACTMIN ON SKEW HEAP" << std::endl;
+            }
+        }
+        binomialHeap.clear();
+        leftistHeap.clear();
+        skewHeap.clear();
+        stdHeap.clear();
+        std::cout << "EXTRACT TEST " << i / 10 << " PASSED" << std::endl;
+    }
+}
+
 void testGeneration(int tests) {
     std::filebuf testBuf;
     testBuf.open("tests.txt", std::ios::out);
@@ -84,7 +152,7 @@ void testGeneration(int tests) {
     testBuf.close();
 }
 
-class FunctionalTest : public ::testing::Test {
+class HardTest : public ::testing::Test {
 protected:
     std::vector<IHeap*> heaps[HEAP_TYPES];
     std::vector<StandartHeap*> stdHeaps;
@@ -134,7 +202,7 @@ protected:
     void callMeld(int heapNumber, int index1, int index2);
 };
 
-void FunctionalTest::callAddHeap(int heapNumber, int key) {
+void HardTest::callAddHeap(int heapNumber, int key) {
     IHeap* newHeap;
     if(heapNumber == 0) {
         newHeap = new BinomialHeap;
@@ -154,7 +222,7 @@ void FunctionalTest::callAddHeap(int heapNumber, int key) {
                                            << stdHeapMin_add << " == STDHEAPMIN AFTER ADDING HEAP" << std::endl;
 }
 
-void FunctionalTest::callInsert(int heapNumber, int index, int key) {
+void HardTest::callInsert(int heapNumber, int index, int key) {
     if(index >= stdHeaps.size()) {
         std::cout << "UNSUCCESSFUL INSERT(" << index << ") : SIZE == " << stdHeaps.size() << " <= " << index
                   << " == INDEX" << std::endl;
@@ -168,7 +236,7 @@ void FunctionalTest::callInsert(int heapNumber, int index, int key) {
                                                  << stdHeapMin_insert << " == STDHEAPMIN AFTER INSERTING" << std::endl;
 }
 
-void FunctionalTest::callGetMin(int heapNumber, int index) {
+void HardTest::callGetMin(int heapNumber, int index) {
     if(index >= stdHeaps.size()) {
         std::cout << "UNSUCCESSFUL GETMIN(" << index << ") : SIZE == " << stdHeaps.size() << " <= " << index
                   << " == INDEX" << std::endl;
@@ -184,7 +252,7 @@ void FunctionalTest::callGetMin(int heapNumber, int index) {
                                                  << stdHeapMin_getMin << " == STDHEAPMIN AFTER GETTING MIN" << std::endl;
 }
 
-void FunctionalTest::callExtractMin(int heapNumber, int index) {
+void HardTest::callExtractMin(int heapNumber, int index) {
     if(index >= stdHeaps.size()) {
         std::cout << "UNSUCCESSFUL EXTRACTMIN(" << index << ") : SIZE == " << stdHeaps.size() << " <= "
                   << index << " == INDEX" << std::endl;
@@ -209,7 +277,7 @@ void FunctionalTest::callExtractMin(int heapNumber, int index) {
     }
 }
 
-void FunctionalTest::callMeld(int heapNumber, int index1, int index2) {
+void HardTest::callMeld(int heapNumber, int index1, int index2) {
     if(index1 >= stdHeaps.size()) {
         std::cout << "UNSUCCESSFUL EXTRACTMIN(" << index1 << ") : SIZE == " << stdHeaps.size() << " <= "
                   << index1 << " == INDEX" << std::endl;
@@ -242,7 +310,45 @@ void FunctionalTest::callMeld(int heapNumber, int index1, int index2) {
     }
 }
 
-TEST_F(FunctionalTest, test) {
+TEST_F(HardTest, MeldTest) {
+    for(size_t i = 0; i < 100; ++i) {
+        IHeap* binomialHeap = new BinomialHeap();
+        IHeap* leftistHeap = new LeftistHeap();
+        IHeap* skewHeap = new SkewHeap();
+        StandartHeap* stdHeap = new StandartHeap();
+        for(size_t j = 0; j < 100; ++j) {
+            int key = rand() % (MAX_KEY - MIN_KEY + 1) + MIN_KEY;
+            binomialHeap->insert(key);
+            leftistHeap->insert(key);
+            skewHeap->insert(key);
+            stdHeap->insert(key);
+        }
+        heaps[0].push_back(binomialHeap);
+        heaps[1].push_back(leftistHeap);
+        heaps[2].push_back(skewHeap);
+        stdHeaps.push_back(stdHeap);
+    }
+    while(stdHeaps.size() > 1) {
+        size_t heap1 = rand() % stdHeaps.size();
+        size_t heap2 = rand() % stdHeaps.size();
+        for(size_t i = 0; i < HEAP_TYPES; ++i) {
+            heaps[i][heap1]->meld(*heaps[i][heap2]);
+        }
+        stdHeaps[heap1]->meld(*stdHeaps[heap2]);
+        EXPECT_EQ(heaps[0][heap1]->getMin(), stdHeaps[heap1]->getMin()) << "BAD MELD ON BINOMIAL HEAP" << std::endl;
+        EXPECT_EQ(heaps[1][heap1]->getMin(), stdHeaps[heap1]->getMin()) << "BAD MELD ON LEFTIST HEAP" << std::endl;
+        EXPECT_EQ(heaps[2][heap1]->getMin(), stdHeaps[heap1]->getMin()) << "BAD MELD ON SKEW HEAP" << std::endl;
+        if(heap1 != heap2) {
+            for(size_t i = 0; i < HEAP_TYPES; ++i) {
+                heaps[i].erase(heaps[i].begin() + heap2);
+            }
+            stdHeaps.erase(stdHeaps.begin() + heap2);
+        }
+    }
+    std::cout << "MELD TEST PASSED" << std::endl;
+}
+
+TEST_F(HardTest, RandomTest) {
     std::filebuf timeBuf;
     timeBuf.open("time.txt", std::ios::out);
     std::ifstream in;

@@ -81,199 +81,17 @@ CMakeFiles/IHeap.dir/main.cpp.o.provides: CMakeFiles/IHeap.dir/main.cpp.o.requir
 CMakeFiles/IHeap.dir/main.cpp.o.provides.build: CMakeFiles/IHeap.dir/main.cpp.o
 
 
-CMakeFiles/IHeap.dir/BinomialTree.cpp.o: CMakeFiles/IHeap.dir/flags.make
-CMakeFiles/IHeap.dir/BinomialTree.cpp.o: ../BinomialTree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/IHeap.dir/BinomialTree.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IHeap.dir/BinomialTree.cpp.o -c "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialTree.cpp"
-
-CMakeFiles/IHeap.dir/BinomialTree.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IHeap.dir/BinomialTree.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialTree.cpp" > CMakeFiles/IHeap.dir/BinomialTree.cpp.i
-
-CMakeFiles/IHeap.dir/BinomialTree.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IHeap.dir/BinomialTree.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialTree.cpp" -o CMakeFiles/IHeap.dir/BinomialTree.cpp.s
-
-CMakeFiles/IHeap.dir/BinomialTree.cpp.o.requires:
-
-.PHONY : CMakeFiles/IHeap.dir/BinomialTree.cpp.o.requires
-
-CMakeFiles/IHeap.dir/BinomialTree.cpp.o.provides: CMakeFiles/IHeap.dir/BinomialTree.cpp.o.requires
-	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/BinomialTree.cpp.o.provides.build
-.PHONY : CMakeFiles/IHeap.dir/BinomialTree.cpp.o.provides
-
-CMakeFiles/IHeap.dir/BinomialTree.cpp.o.provides.build: CMakeFiles/IHeap.dir/BinomialTree.cpp.o
-
-
-CMakeFiles/IHeap.dir/BinomialHeap.cpp.o: CMakeFiles/IHeap.dir/flags.make
-CMakeFiles/IHeap.dir/BinomialHeap.cpp.o: ../BinomialHeap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/IHeap.dir/BinomialHeap.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IHeap.dir/BinomialHeap.cpp.o -c "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialHeap.cpp"
-
-CMakeFiles/IHeap.dir/BinomialHeap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IHeap.dir/BinomialHeap.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialHeap.cpp" > CMakeFiles/IHeap.dir/BinomialHeap.cpp.i
-
-CMakeFiles/IHeap.dir/BinomialHeap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IHeap.dir/BinomialHeap.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialHeap.cpp" -o CMakeFiles/IHeap.dir/BinomialHeap.cpp.s
-
-CMakeFiles/IHeap.dir/BinomialHeap.cpp.o.requires:
-
-.PHONY : CMakeFiles/IHeap.dir/BinomialHeap.cpp.o.requires
-
-CMakeFiles/IHeap.dir/BinomialHeap.cpp.o.provides: CMakeFiles/IHeap.dir/BinomialHeap.cpp.o.requires
-	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/BinomialHeap.cpp.o.provides.build
-.PHONY : CMakeFiles/IHeap.dir/BinomialHeap.cpp.o.provides
-
-CMakeFiles/IHeap.dir/BinomialHeap.cpp.o.provides.build: CMakeFiles/IHeap.dir/BinomialHeap.cpp.o
-
-
-CMakeFiles/IHeap.dir/LeftistHeap.cpp.o: CMakeFiles/IHeap.dir/flags.make
-CMakeFiles/IHeap.dir/LeftistHeap.cpp.o: ../LeftistHeap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/IHeap.dir/LeftistHeap.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IHeap.dir/LeftistHeap.cpp.o -c "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.cpp"
-
-CMakeFiles/IHeap.dir/LeftistHeap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IHeap.dir/LeftistHeap.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.cpp" > CMakeFiles/IHeap.dir/LeftistHeap.cpp.i
-
-CMakeFiles/IHeap.dir/LeftistHeap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IHeap.dir/LeftistHeap.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.cpp" -o CMakeFiles/IHeap.dir/LeftistHeap.cpp.s
-
-CMakeFiles/IHeap.dir/LeftistHeap.cpp.o.requires:
-
-.PHONY : CMakeFiles/IHeap.dir/LeftistHeap.cpp.o.requires
-
-CMakeFiles/IHeap.dir/LeftistHeap.cpp.o.provides: CMakeFiles/IHeap.dir/LeftistHeap.cpp.o.requires
-	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/LeftistHeap.cpp.o.provides.build
-.PHONY : CMakeFiles/IHeap.dir/LeftistHeap.cpp.o.provides
-
-CMakeFiles/IHeap.dir/LeftistHeap.cpp.o.provides.build: CMakeFiles/IHeap.dir/LeftistHeap.cpp.o
-
-
-CMakeFiles/IHeap.dir/LeftistNode.cpp.o: CMakeFiles/IHeap.dir/flags.make
-CMakeFiles/IHeap.dir/LeftistNode.cpp.o: ../LeftistNode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/IHeap.dir/LeftistNode.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IHeap.dir/LeftistNode.cpp.o -c "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistNode.cpp"
-
-CMakeFiles/IHeap.dir/LeftistNode.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IHeap.dir/LeftistNode.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistNode.cpp" > CMakeFiles/IHeap.dir/LeftistNode.cpp.i
-
-CMakeFiles/IHeap.dir/LeftistNode.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IHeap.dir/LeftistNode.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistNode.cpp" -o CMakeFiles/IHeap.dir/LeftistNode.cpp.s
-
-CMakeFiles/IHeap.dir/LeftistNode.cpp.o.requires:
-
-.PHONY : CMakeFiles/IHeap.dir/LeftistNode.cpp.o.requires
-
-CMakeFiles/IHeap.dir/LeftistNode.cpp.o.provides: CMakeFiles/IHeap.dir/LeftistNode.cpp.o.requires
-	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/LeftistNode.cpp.o.provides.build
-.PHONY : CMakeFiles/IHeap.dir/LeftistNode.cpp.o.provides
-
-CMakeFiles/IHeap.dir/LeftistNode.cpp.o.provides.build: CMakeFiles/IHeap.dir/LeftistNode.cpp.o
-
-
-CMakeFiles/IHeap.dir/SkewHeap.cpp.o: CMakeFiles/IHeap.dir/flags.make
-CMakeFiles/IHeap.dir/SkewHeap.cpp.o: ../SkewHeap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/IHeap.dir/SkewHeap.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IHeap.dir/SkewHeap.cpp.o -c "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.cpp"
-
-CMakeFiles/IHeap.dir/SkewHeap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IHeap.dir/SkewHeap.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.cpp" > CMakeFiles/IHeap.dir/SkewHeap.cpp.i
-
-CMakeFiles/IHeap.dir/SkewHeap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IHeap.dir/SkewHeap.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.cpp" -o CMakeFiles/IHeap.dir/SkewHeap.cpp.s
-
-CMakeFiles/IHeap.dir/SkewHeap.cpp.o.requires:
-
-.PHONY : CMakeFiles/IHeap.dir/SkewHeap.cpp.o.requires
-
-CMakeFiles/IHeap.dir/SkewHeap.cpp.o.provides: CMakeFiles/IHeap.dir/SkewHeap.cpp.o.requires
-	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/SkewHeap.cpp.o.provides.build
-.PHONY : CMakeFiles/IHeap.dir/SkewHeap.cpp.o.provides
-
-CMakeFiles/IHeap.dir/SkewHeap.cpp.o.provides.build: CMakeFiles/IHeap.dir/SkewHeap.cpp.o
-
-
-CMakeFiles/IHeap.dir/SkewNode.cpp.o: CMakeFiles/IHeap.dir/flags.make
-CMakeFiles/IHeap.dir/SkewNode.cpp.o: ../SkewNode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/IHeap.dir/SkewNode.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IHeap.dir/SkewNode.cpp.o -c "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewNode.cpp"
-
-CMakeFiles/IHeap.dir/SkewNode.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IHeap.dir/SkewNode.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewNode.cpp" > CMakeFiles/IHeap.dir/SkewNode.cpp.i
-
-CMakeFiles/IHeap.dir/SkewNode.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IHeap.dir/SkewNode.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewNode.cpp" -o CMakeFiles/IHeap.dir/SkewNode.cpp.s
-
-CMakeFiles/IHeap.dir/SkewNode.cpp.o.requires:
-
-.PHONY : CMakeFiles/IHeap.dir/SkewNode.cpp.o.requires
-
-CMakeFiles/IHeap.dir/SkewNode.cpp.o.provides: CMakeFiles/IHeap.dir/SkewNode.cpp.o.requires
-	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/SkewNode.cpp.o.provides.build
-.PHONY : CMakeFiles/IHeap.dir/SkewNode.cpp.o.provides
-
-CMakeFiles/IHeap.dir/SkewNode.cpp.o.provides.build: CMakeFiles/IHeap.dir/SkewNode.cpp.o
-
-
-CMakeFiles/IHeap.dir/StandartHeap.cpp.o: CMakeFiles/IHeap.dir/flags.make
-CMakeFiles/IHeap.dir/StandartHeap.cpp.o: ../StandartHeap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/IHeap.dir/StandartHeap.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IHeap.dir/StandartHeap.cpp.o -c "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandartHeap.cpp"
-
-CMakeFiles/IHeap.dir/StandartHeap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IHeap.dir/StandartHeap.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandartHeap.cpp" > CMakeFiles/IHeap.dir/StandartHeap.cpp.i
-
-CMakeFiles/IHeap.dir/StandartHeap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IHeap.dir/StandartHeap.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandartHeap.cpp" -o CMakeFiles/IHeap.dir/StandartHeap.cpp.s
-
-CMakeFiles/IHeap.dir/StandartHeap.cpp.o.requires:
-
-.PHONY : CMakeFiles/IHeap.dir/StandartHeap.cpp.o.requires
-
-CMakeFiles/IHeap.dir/StandartHeap.cpp.o.provides: CMakeFiles/IHeap.dir/StandartHeap.cpp.o.requires
-	$(MAKE) -f CMakeFiles/IHeap.dir/build.make CMakeFiles/IHeap.dir/StandartHeap.cpp.o.provides.build
-.PHONY : CMakeFiles/IHeap.dir/StandartHeap.cpp.o.provides
-
-CMakeFiles/IHeap.dir/StandartHeap.cpp.o.provides.build: CMakeFiles/IHeap.dir/StandartHeap.cpp.o
-
-
 # Object files for target IHeap
 IHeap_OBJECTS = \
-"CMakeFiles/IHeap.dir/main.cpp.o" \
-"CMakeFiles/IHeap.dir/BinomialTree.cpp.o" \
-"CMakeFiles/IHeap.dir/BinomialHeap.cpp.o" \
-"CMakeFiles/IHeap.dir/LeftistHeap.cpp.o" \
-"CMakeFiles/IHeap.dir/LeftistNode.cpp.o" \
-"CMakeFiles/IHeap.dir/SkewHeap.cpp.o" \
-"CMakeFiles/IHeap.dir/SkewNode.cpp.o" \
-"CMakeFiles/IHeap.dir/StandartHeap.cpp.o"
+"CMakeFiles/IHeap.dir/main.cpp.o"
 
 # External object files for target IHeap
 IHeap_EXTERNAL_OBJECTS =
 
 IHeap: CMakeFiles/IHeap.dir/main.cpp.o
-IHeap: CMakeFiles/IHeap.dir/BinomialTree.cpp.o
-IHeap: CMakeFiles/IHeap.dir/BinomialHeap.cpp.o
-IHeap: CMakeFiles/IHeap.dir/LeftistHeap.cpp.o
-IHeap: CMakeFiles/IHeap.dir/LeftistNode.cpp.o
-IHeap: CMakeFiles/IHeap.dir/SkewHeap.cpp.o
-IHeap: CMakeFiles/IHeap.dir/SkewNode.cpp.o
-IHeap: CMakeFiles/IHeap.dir/StandartHeap.cpp.o
 IHeap: CMakeFiles/IHeap.dir/build.make
 IHeap: CMakeFiles/IHeap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable IHeap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable IHeap"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IHeap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -282,13 +100,6 @@ CMakeFiles/IHeap.dir/build: IHeap
 .PHONY : CMakeFiles/IHeap.dir/build
 
 CMakeFiles/IHeap.dir/requires: CMakeFiles/IHeap.dir/main.cpp.o.requires
-CMakeFiles/IHeap.dir/requires: CMakeFiles/IHeap.dir/BinomialTree.cpp.o.requires
-CMakeFiles/IHeap.dir/requires: CMakeFiles/IHeap.dir/BinomialHeap.cpp.o.requires
-CMakeFiles/IHeap.dir/requires: CMakeFiles/IHeap.dir/LeftistHeap.cpp.o.requires
-CMakeFiles/IHeap.dir/requires: CMakeFiles/IHeap.dir/LeftistNode.cpp.o.requires
-CMakeFiles/IHeap.dir/requires: CMakeFiles/IHeap.dir/SkewHeap.cpp.o.requires
-CMakeFiles/IHeap.dir/requires: CMakeFiles/IHeap.dir/SkewNode.cpp.o.requires
-CMakeFiles/IHeap.dir/requires: CMakeFiles/IHeap.dir/StandartHeap.cpp.o.requires
 
 .PHONY : CMakeFiles/IHeap.dir/requires
 

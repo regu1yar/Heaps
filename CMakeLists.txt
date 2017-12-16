@@ -5,5 +5,5 @@ set(CMAKE_CXX_STANDARD 11)
 
 include_directories(~/googletest/googletest/include)
 link_directories(~/googletest/googletest/cmake-build-debug)
-add_executable(IHeap main.cpp IHeap.h BinomialTree.cpp BinomialTree.h BinomialHeap.cpp BinomialHeap.h LeftistHeap.cpp LeftistHeap.h LeftistNode.cpp LeftistNode.h SkewHeap.cpp SkewHeap.h SkewNode.cpp SkewNode.h StandartHeap.cpp StandartHeap.h)
+add_executable(IHeap main.cpp IHeap.h BinomialHeap.h LeftistHeap.h SkewHeap.h StandartHeap.h)
 target_link_libraries(IHeap gtestd)

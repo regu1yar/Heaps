@@ -1,500 +1,500 @@
 100 operations:
-Binomial Heap: clocks - 308 seconds - 0.000308
-Leftist Heap: clocks - 204 seconds - 0.000204
-Skew Heap: clocks - 203 seconds - 0.000203
+Binomial Heap: clocks - 264 seconds - 0.000264
+Leftist Heap: clocks - 164 seconds - 0.000164
+Skew Heap: clocks - 161 seconds - 0.000161
 
 200 operations:
-Binomial Heap: clocks - 580 seconds - 0.00058
-Leftist Heap: clocks - 366 seconds - 0.000366
-Skew Heap: clocks - 366 seconds - 0.000366
+Binomial Heap: clocks - 651 seconds - 0.000651
+Leftist Heap: clocks - 435 seconds - 0.000435
+Skew Heap: clocks - 361 seconds - 0.000361
 
 300 operations:
-Binomial Heap: clocks - 975 seconds - 0.000975
-Leftist Heap: clocks - 584 seconds - 0.000584
-Skew Heap: clocks - 576 seconds - 0.000576
+Binomial Heap: clocks - 827 seconds - 0.000827
+Leftist Heap: clocks - 817 seconds - 0.000817
+Skew Heap: clocks - 1178 seconds - 0.001178
 
 400 operations:
-Binomial Heap: clocks - 1465 seconds - 0.001465
-Leftist Heap: clocks - 939 seconds - 0.000939
-Skew Heap: clocks - 958 seconds - 0.000958
+Binomial Heap: clocks - 1157 seconds - 0.001157
+Leftist Heap: clocks - 652 seconds - 0.000652
+Skew Heap: clocks - 748 seconds - 0.000748
 
 500 operations:
-Binomial Heap: clocks - 2110 seconds - 0.00211
-Leftist Heap: clocks - 1297 seconds - 0.001297
-Skew Heap: clocks - 1325 seconds - 0.001325
+Binomial Heap: clocks - 2035 seconds - 0.002035
+Leftist Heap: clocks - 1481 seconds - 0.001481
+Skew Heap: clocks - 1005 seconds - 0.001005
 
 600 operations:
-Binomial Heap: clocks - 1909 seconds - 0.001909
-Leftist Heap: clocks - 938 seconds - 0.000938
-Skew Heap: clocks - 899 seconds - 0.000899
+Binomial Heap: clocks - 2612 seconds - 0.002612
+Leftist Heap: clocks - 1341 seconds - 0.001341
+Skew Heap: clocks - 1961 seconds - 0.001961
 
 700 operations:
-Binomial Heap: clocks - 1946 seconds - 0.001946
-Leftist Heap: clocks - 1198 seconds - 0.001198
-Skew Heap: clocks - 1317 seconds - 0.001317
+Binomial Heap: clocks - 2020 seconds - 0.00202
+Leftist Heap: clocks - 2552 seconds - 0.002552
+Skew Heap: clocks - 1872 seconds - 0.001872
 
 800 operations:
-Binomial Heap: clocks - 2381 seconds - 0.002381
-Leftist Heap: clocks - 1769 seconds - 0.001769
-Skew Heap: clocks - 2485 seconds - 0.002485
+Binomial Heap: clocks - 4912 seconds - 0.004912
+Leftist Heap: clocks - 3275 seconds - 0.003275
+Skew Heap: clocks - 2919 seconds - 0.002919
 
 900 operations:
-Binomial Heap: clocks - 4158 seconds - 0.004158
-Leftist Heap: clocks - 3040 seconds - 0.00304
-Skew Heap: clocks - 3370 seconds - 0.00337
+Binomial Heap: clocks - 2848 seconds - 0.002848
+Leftist Heap: clocks - 1803 seconds - 0.001803
+Skew Heap: clocks - 1800 seconds - 0.0018
 
 1000 operations:
-Binomial Heap: clocks - 3252 seconds - 0.003252
-Leftist Heap: clocks - 1795 seconds - 0.001795
-Skew Heap: clocks - 1652 seconds - 0.001652
+Binomial Heap: clocks - 4199 seconds - 0.004199
+Leftist Heap: clocks - 3396 seconds - 0.003396
+Skew Heap: clocks - 3452 seconds - 0.003452
 
 1100 operations:
-Binomial Heap: clocks - 6747 seconds - 0.006747
-Leftist Heap: clocks - 4566 seconds - 0.004566
-Skew Heap: clocks - 4870 seconds - 0.00487
+Binomial Heap: clocks - 5027 seconds - 0.005027
+Leftist Heap: clocks - 2888 seconds - 0.002888
+Skew Heap: clocks - 2909 seconds - 0.002909
 
 1200 operations:
-Binomial Heap: clocks - 5649 seconds - 0.005649
-Leftist Heap: clocks - 3345 seconds - 0.003345
-Skew Heap: clocks - 3614 seconds - 0.003614
+Binomial Heap: clocks - 4415 seconds - 0.004415
+Leftist Heap: clocks - 2909 seconds - 0.002909
+Skew Heap: clocks - 2940 seconds - 0.00294
 
 1300 operations:
-Binomial Heap: clocks - 5879 seconds - 0.005879
-Leftist Heap: clocks - 3300 seconds - 0.0033
-Skew Heap: clocks - 2455 seconds - 0.002455
+Binomial Heap: clocks - 7665 seconds - 0.007665
+Leftist Heap: clocks - 5368 seconds - 0.005368
+Skew Heap: clocks - 6415 seconds - 0.006415
 
 1400 operations:
-Binomial Heap: clocks - 5946 seconds - 0.005946
-Leftist Heap: clocks - 6145 seconds - 0.006145
-Skew Heap: clocks - 4059 seconds - 0.004059
+Binomial Heap: clocks - 7209 seconds - 0.007209
+Leftist Heap: clocks - 4400 seconds - 0.0044
+Skew Heap: clocks - 3155 seconds - 0.003155
 
 1500 operations:
-Binomial Heap: clocks - 4842 seconds - 0.004842
-Leftist Heap: clocks - 3956 seconds - 0.003956
-Skew Heap: clocks - 3836 seconds - 0.003836
+Binomial Heap: clocks - 6604 seconds - 0.006604
+Leftist Heap: clocks - 4790 seconds - 0.00479
+Skew Heap: clocks - 3141 seconds - 0.003141
 
 1600 operations:
-Binomial Heap: clocks - 8183 seconds - 0.008183
-Leftist Heap: clocks - 4534 seconds - 0.004534
-Skew Heap: clocks - 4312 seconds - 0.004312
+Binomial Heap: clocks - 7862 seconds - 0.007862
+Leftist Heap: clocks - 5452 seconds - 0.005452
+Skew Heap: clocks - 5415 seconds - 0.005415
 
 1700 operations:
-Binomial Heap: clocks - 7901 seconds - 0.007901
-Leftist Heap: clocks - 5990 seconds - 0.00599
-Skew Heap: clocks - 8328 seconds - 0.008328
+Binomial Heap: clocks - 8928 seconds - 0.008928
+Leftist Heap: clocks - 4253 seconds - 0.004253
+Skew Heap: clocks - 5010 seconds - 0.00501
 
 1800 operations:
-Binomial Heap: clocks - 8151 seconds - 0.008151
-Leftist Heap: clocks - 6490 seconds - 0.00649
-Skew Heap: clocks - 5109 seconds - 0.005109
+Binomial Heap: clocks - 9905 seconds - 0.009905
+Leftist Heap: clocks - 5743 seconds - 0.005743
+Skew Heap: clocks - 6585 seconds - 0.006585
 
 1900 operations:
-Binomial Heap: clocks - 12425 seconds - 0.012425
-Leftist Heap: clocks - 7539 seconds - 0.007539
-Skew Heap: clocks - 8299 seconds - 0.008299
+Binomial Heap: clocks - 9881 seconds - 0.009881
+Leftist Heap: clocks - 6323 seconds - 0.006323
+Skew Heap: clocks - 5852 seconds - 0.005852
 
 2000 operations:
-Binomial Heap: clocks - 7029 seconds - 0.007029
-Leftist Heap: clocks - 4428 seconds - 0.004428
-Skew Heap: clocks - 4634 seconds - 0.004634
+Binomial Heap: clocks - 10600 seconds - 0.0106
+Leftist Heap: clocks - 7637 seconds - 0.007637
+Skew Heap: clocks - 6883 seconds - 0.006883
 
 2100 operations:
-Binomial Heap: clocks - 10404 seconds - 0.010404
-Leftist Heap: clocks - 4500 seconds - 0.0045
-Skew Heap: clocks - 4297 seconds - 0.004297
+Binomial Heap: clocks - 6691 seconds - 0.006691
+Leftist Heap: clocks - 5472 seconds - 0.005472
+Skew Heap: clocks - 4314 seconds - 0.004314
 
 2200 operations:
-Binomial Heap: clocks - 8577 seconds - 0.008577
-Leftist Heap: clocks - 5848 seconds - 0.005848
-Skew Heap: clocks - 7834 seconds - 0.007834
+Binomial Heap: clocks - 8899 seconds - 0.008899
+Leftist Heap: clocks - 7030 seconds - 0.00703
+Skew Heap: clocks - 7986 seconds - 0.007986
 
 2300 operations:
-Binomial Heap: clocks - 8498 seconds - 0.008498
-Leftist Heap: clocks - 6072 seconds - 0.006072
-Skew Heap: clocks - 3931 seconds - 0.003931
+Binomial Heap: clocks - 12663 seconds - 0.012663
+Leftist Heap: clocks - 7488 seconds - 0.007488
+Skew Heap: clocks - 9057 seconds - 0.009057
 
 2400 operations:
-Binomial Heap: clocks - 12365 seconds - 0.012365
-Leftist Heap: clocks - 6872 seconds - 0.006872
-Skew Heap: clocks - 7419 seconds - 0.007419
+Binomial Heap: clocks - 9358 seconds - 0.009358
+Leftist Heap: clocks - 6615 seconds - 0.006615
+Skew Heap: clocks - 6171 seconds - 0.006171
 
 2500 operations:
-Binomial Heap: clocks - 10438 seconds - 0.010438
-Leftist Heap: clocks - 4925 seconds - 0.004925
-Skew Heap: clocks - 6177 seconds - 0.006177
+Binomial Heap: clocks - 14667 seconds - 0.014667
+Leftist Heap: clocks - 8852 seconds - 0.008852
+Skew Heap: clocks - 7929 seconds - 0.007929
 
 2600 operations:
-Binomial Heap: clocks - 11058 seconds - 0.011058
-Leftist Heap: clocks - 6993 seconds - 0.006993
-Skew Heap: clocks - 6177 seconds - 0.006177
+Binomial Heap: clocks - 17072 seconds - 0.017072
+Leftist Heap: clocks - 8369 seconds - 0.008369
+Skew Heap: clocks - 8067 seconds - 0.008067
 
 2700 operations:
-Binomial Heap: clocks - 18049 seconds - 0.018049
-Leftist Heap: clocks - 12478 seconds - 0.012478
-Skew Heap: clocks - 12707 seconds - 0.012707
+Binomial Heap: clocks - 11704 seconds - 0.011704
+Leftist Heap: clocks - 7263 seconds - 0.007263
+Skew Heap: clocks - 7453 seconds - 0.007453
 
 2800 operations:
-Binomial Heap: clocks - 10376 seconds - 0.010376
-Leftist Heap: clocks - 6934 seconds - 0.006934
-Skew Heap: clocks - 6218 seconds - 0.006218
+Binomial Heap: clocks - 13276 seconds - 0.013276
+Leftist Heap: clocks - 9440 seconds - 0.00944
+Skew Heap: clocks - 12377 seconds - 0.012377
 
 2900 operations:
-Binomial Heap: clocks - 14006 seconds - 0.014006
-Leftist Heap: clocks - 10365 seconds - 0.010365
-Skew Heap: clocks - 11068 seconds - 0.011068
+Binomial Heap: clocks - 25331 seconds - 0.025331
+Leftist Heap: clocks - 15580 seconds - 0.01558
+Skew Heap: clocks - 14891 seconds - 0.014891
 
 3000 operations:
-Binomial Heap: clocks - 13428 seconds - 0.013428
-Leftist Heap: clocks - 8203 seconds - 0.008203
-Skew Heap: clocks - 8187 seconds - 0.008187
+Binomial Heap: clocks - 11850 seconds - 0.01185
+Leftist Heap: clocks - 8090 seconds - 0.00809
+Skew Heap: clocks - 10386 seconds - 0.010386
 
 3100 operations:
-Binomial Heap: clocks - 11814 seconds - 0.011814
-Leftist Heap: clocks - 8119 seconds - 0.008119
-Skew Heap: clocks - 7118 seconds - 0.007118
+Binomial Heap: clocks - 21570 seconds - 0.02157
+Leftist Heap: clocks - 13191 seconds - 0.013191
+Skew Heap: clocks - 13581 seconds - 0.013581
 
 3200 operations:
-Binomial Heap: clocks - 11662 seconds - 0.011662
-Leftist Heap: clocks - 9284 seconds - 0.009284
-Skew Heap: clocks - 9654 seconds - 0.009654
+Binomial Heap: clocks - 18056 seconds - 0.018056
+Leftist Heap: clocks - 10932 seconds - 0.010932
+Skew Heap: clocks - 10379 seconds - 0.010379
 
 3300 operations:
-Binomial Heap: clocks - 14895 seconds - 0.014895
-Leftist Heap: clocks - 9729 seconds - 0.009729
-Skew Heap: clocks - 9737 seconds - 0.009737
+Binomial Heap: clocks - 18762 seconds - 0.018762
+Leftist Heap: clocks - 12198 seconds - 0.012198
+Skew Heap: clocks - 12822 seconds - 0.012822
 
 3400 operations:
-Binomial Heap: clocks - 17673 seconds - 0.017673
-Leftist Heap: clocks - 9951 seconds - 0.009951
-Skew Heap: clocks - 9733 seconds - 0.009733
+Binomial Heap: clocks - 18642 seconds - 0.018642
+Leftist Heap: clocks - 13928 seconds - 0.013928
+Skew Heap: clocks - 13967 seconds - 0.013967
 
 3500 operations:
-Binomial Heap: clocks - 16051 seconds - 0.016051
-Leftist Heap: clocks - 10581 seconds - 0.010581
-Skew Heap: clocks - 10923 seconds - 0.010923
+Binomial Heap: clocks - 16912 seconds - 0.016912
+Leftist Heap: clocks - 10492 seconds - 0.010492
+Skew Heap: clocks - 11896 seconds - 0.011896
 
 3600 operations:
-Binomial Heap: clocks - 15447 seconds - 0.015447
-Leftist Heap: clocks - 10075 seconds - 0.010075
-Skew Heap: clocks - 9960 seconds - 0.00996
+Binomial Heap: clocks - 20641 seconds - 0.020641
+Leftist Heap: clocks - 13903 seconds - 0.013903
+Skew Heap: clocks - 15872 seconds - 0.015872
 
 3700 operations:
-Binomial Heap: clocks - 13328 seconds - 0.013328
-Leftist Heap: clocks - 8585 seconds - 0.008585
-Skew Heap: clocks - 8822 seconds - 0.008822
-
-3800 operations:
-Binomial Heap: clocks - 16798 seconds - 0.016798
-Leftist Heap: clocks - 9511 seconds - 0.009511
-Skew Heap: clocks - 9950 seconds - 0.00995
-
-3900 operations:
-Binomial Heap: clocks - 17591 seconds - 0.017591
-Leftist Heap: clocks - 11524 seconds - 0.011524
-Skew Heap: clocks - 10027 seconds - 0.010027
-
-4000 operations:
-Binomial Heap: clocks - 21228 seconds - 0.021228
-Leftist Heap: clocks - 14307 seconds - 0.014307
-Skew Heap: clocks - 17277 seconds - 0.017277
-
-4100 operations:
-Binomial Heap: clocks - 23644 seconds - 0.023644
-Leftist Heap: clocks - 13376 seconds - 0.013376
+Binomial Heap: clocks - 19159 seconds - 0.019159
+Leftist Heap: clocks - 12822 seconds - 0.012822
 Skew Heap: clocks - 13669 seconds - 0.013669
 
+3800 operations:
+Binomial Heap: clocks - 21320 seconds - 0.02132
+Leftist Heap: clocks - 11976 seconds - 0.011976
+Skew Heap: clocks - 10586 seconds - 0.010586
+
+3900 operations:
+Binomial Heap: clocks - 27034 seconds - 0.027034
+Leftist Heap: clocks - 22100 seconds - 0.0221
+Skew Heap: clocks - 19768 seconds - 0.019768
+
+4000 operations:
+Binomial Heap: clocks - 25890 seconds - 0.02589
+Leftist Heap: clocks - 18072 seconds - 0.018072
+Skew Heap: clocks - 17653 seconds - 0.017653
+
+4100 operations:
+Binomial Heap: clocks - 34372 seconds - 0.034372
+Leftist Heap: clocks - 21844 seconds - 0.021844
+Skew Heap: clocks - 22498 seconds - 0.022498
+
 4200 operations:
-Binomial Heap: clocks - 11692 seconds - 0.011692
-Leftist Heap: clocks - 8350 seconds - 0.00835
-Skew Heap: clocks - 7183 seconds - 0.007183
+Binomial Heap: clocks - 23345 seconds - 0.023345
+Leftist Heap: clocks - 16409 seconds - 0.016409
+Skew Heap: clocks - 15873 seconds - 0.015873
 
 4300 operations:
-Binomial Heap: clocks - 20687 seconds - 0.020687
-Leftist Heap: clocks - 11000 seconds - 0.011
-Skew Heap: clocks - 11344 seconds - 0.011344
+Binomial Heap: clocks - 21127 seconds - 0.021127
+Leftist Heap: clocks - 14722 seconds - 0.014722
+Skew Heap: clocks - 14123 seconds - 0.014123
 
 4400 operations:
-Binomial Heap: clocks - 21310 seconds - 0.02131
-Leftist Heap: clocks - 11567 seconds - 0.011567
-Skew Heap: clocks - 11428 seconds - 0.011428
+Binomial Heap: clocks - 37893 seconds - 0.037893
+Leftist Heap: clocks - 26441 seconds - 0.026441
+Skew Heap: clocks - 25599 seconds - 0.025599
 
 4500 operations:
-Binomial Heap: clocks - 33468 seconds - 0.033468
-Leftist Heap: clocks - 24799 seconds - 0.024799
-Skew Heap: clocks - 22020 seconds - 0.02202
+Binomial Heap: clocks - 28398 seconds - 0.028398
+Leftist Heap: clocks - 20739 seconds - 0.020739
+Skew Heap: clocks - 20897 seconds - 0.020897
 
 4600 operations:
-Binomial Heap: clocks - 23245 seconds - 0.023245
-Leftist Heap: clocks - 13845 seconds - 0.013845
-Skew Heap: clocks - 16613 seconds - 0.016613
+Binomial Heap: clocks - 28824 seconds - 0.028824
+Leftist Heap: clocks - 17532 seconds - 0.017532
+Skew Heap: clocks - 18390 seconds - 0.01839
 
 4700 operations:
-Binomial Heap: clocks - 26614 seconds - 0.026614
-Leftist Heap: clocks - 19173 seconds - 0.019173
-Skew Heap: clocks - 16025 seconds - 0.016025
+Binomial Heap: clocks - 38348 seconds - 0.038348
+Leftist Heap: clocks - 24608 seconds - 0.024608
+Skew Heap: clocks - 28564 seconds - 0.028564
 
 4800 operations:
-Binomial Heap: clocks - 26675 seconds - 0.026675
-Leftist Heap: clocks - 17516 seconds - 0.017516
-Skew Heap: clocks - 16650 seconds - 0.01665
+Binomial Heap: clocks - 24682 seconds - 0.024682
+Leftist Heap: clocks - 15990 seconds - 0.01599
+Skew Heap: clocks - 19832 seconds - 0.019832
 
 4900 operations:
-Binomial Heap: clocks - 28279 seconds - 0.028279
-Leftist Heap: clocks - 17409 seconds - 0.017409
-Skew Heap: clocks - 19147 seconds - 0.019147
+Binomial Heap: clocks - 34821 seconds - 0.034821
+Leftist Heap: clocks - 23394 seconds - 0.023394
+Skew Heap: clocks - 23782 seconds - 0.023782
 
 5000 operations:
-Binomial Heap: clocks - 29677 seconds - 0.029677
-Leftist Heap: clocks - 22996 seconds - 0.022996
-Skew Heap: clocks - 21544 seconds - 0.021544
+Binomial Heap: clocks - 28989 seconds - 0.028989
+Leftist Heap: clocks - 17174 seconds - 0.017174
+Skew Heap: clocks - 16421 seconds - 0.016421
 
 5100 operations:
-Binomial Heap: clocks - 24781 seconds - 0.024781
-Leftist Heap: clocks - 13911 seconds - 0.013911
-Skew Heap: clocks - 14334 seconds - 0.014334
+Binomial Heap: clocks - 48894 seconds - 0.048894
+Leftist Heap: clocks - 33264 seconds - 0.033264
+Skew Heap: clocks - 32551 seconds - 0.032551
 
 5200 operations:
-Binomial Heap: clocks - 19902 seconds - 0.019902
-Leftist Heap: clocks - 11249 seconds - 0.011249
-Skew Heap: clocks - 14287 seconds - 0.014287
+Binomial Heap: clocks - 40750 seconds - 0.04075
+Leftist Heap: clocks - 26691 seconds - 0.026691
+Skew Heap: clocks - 23334 seconds - 0.023334
 
 5300 operations:
-Binomial Heap: clocks - 36140 seconds - 0.03614
-Leftist Heap: clocks - 24997 seconds - 0.024997
-Skew Heap: clocks - 24536 seconds - 0.024536
+Binomial Heap: clocks - 46807 seconds - 0.046807
+Leftist Heap: clocks - 30454 seconds - 0.030454
+Skew Heap: clocks - 31617 seconds - 0.031617
 
 5400 operations:
-Binomial Heap: clocks - 30630 seconds - 0.03063
-Leftist Heap: clocks - 17693 seconds - 0.017693
-Skew Heap: clocks - 23915 seconds - 0.023915
+Binomial Heap: clocks - 45443 seconds - 0.045443
+Leftist Heap: clocks - 26839 seconds - 0.026839
+Skew Heap: clocks - 30028 seconds - 0.030028
 
 5500 operations:
-Binomial Heap: clocks - 39335 seconds - 0.039335
-Leftist Heap: clocks - 22223 seconds - 0.022223
-Skew Heap: clocks - 21507 seconds - 0.021507
+Binomial Heap: clocks - 27844 seconds - 0.027844
+Leftist Heap: clocks - 17052 seconds - 0.017052
+Skew Heap: clocks - 18123 seconds - 0.018123
 
 5600 operations:
-Binomial Heap: clocks - 32664 seconds - 0.032664
-Leftist Heap: clocks - 19561 seconds - 0.019561
-Skew Heap: clocks - 21019 seconds - 0.021019
+Binomial Heap: clocks - 35212 seconds - 0.035212
+Leftist Heap: clocks - 23228 seconds - 0.023228
+Skew Heap: clocks - 26466 seconds - 0.026466
 
 5700 operations:
-Binomial Heap: clocks - 37366 seconds - 0.037366
-Leftist Heap: clocks - 24940 seconds - 0.02494
-Skew Heap: clocks - 30607 seconds - 0.030607
+Binomial Heap: clocks - 58813 seconds - 0.058813
+Leftist Heap: clocks - 40602 seconds - 0.040602
+Skew Heap: clocks - 38300 seconds - 0.0383
 
 5800 operations:
-Binomial Heap: clocks - 29453 seconds - 0.029453
-Leftist Heap: clocks - 16906 seconds - 0.016906
-Skew Heap: clocks - 16307 seconds - 0.016307
+Binomial Heap: clocks - 42239 seconds - 0.042239
+Leftist Heap: clocks - 24971 seconds - 0.024971
+Skew Heap: clocks - 23361 seconds - 0.023361
 
 5900 operations:
-Binomial Heap: clocks - 31638 seconds - 0.031638
-Leftist Heap: clocks - 20278 seconds - 0.020278
-Skew Heap: clocks - 19874 seconds - 0.019874
+Binomial Heap: clocks - 42913 seconds - 0.042913
+Leftist Heap: clocks - 30063 seconds - 0.030063
+Skew Heap: clocks - 28000 seconds - 0.028
 
 6000 operations:
-Binomial Heap: clocks - 27413 seconds - 0.027413
-Leftist Heap: clocks - 16735 seconds - 0.016735
-Skew Heap: clocks - 17065 seconds - 0.017065
+Binomial Heap: clocks - 33514 seconds - 0.033514
+Leftist Heap: clocks - 21413 seconds - 0.021413
+Skew Heap: clocks - 24691 seconds - 0.024691
 
 6100 operations:
-Binomial Heap: clocks - 35478 seconds - 0.035478
-Leftist Heap: clocks - 23096 seconds - 0.023096
-Skew Heap: clocks - 20511 seconds - 0.020511
+Binomial Heap: clocks - 30488 seconds - 0.030488
+Leftist Heap: clocks - 20852 seconds - 0.020852
+Skew Heap: clocks - 21263 seconds - 0.021263
 
 6200 operations:
-Binomial Heap: clocks - 25629 seconds - 0.025629
-Leftist Heap: clocks - 17053 seconds - 0.017053
-Skew Heap: clocks - 16009 seconds - 0.016009
+Binomial Heap: clocks - 42942 seconds - 0.042942
+Leftist Heap: clocks - 29149 seconds - 0.029149
+Skew Heap: clocks - 29059 seconds - 0.029059
 
 6300 operations:
-Binomial Heap: clocks - 46377 seconds - 0.046377
-Leftist Heap: clocks - 28394 seconds - 0.028394
-Skew Heap: clocks - 26734 seconds - 0.026734
+Binomial Heap: clocks - 45029 seconds - 0.045029
+Leftist Heap: clocks - 30255 seconds - 0.030255
+Skew Heap: clocks - 30413 seconds - 0.030413
 
 6400 operations:
-Binomial Heap: clocks - 40652 seconds - 0.040652
-Leftist Heap: clocks - 33670 seconds - 0.03367
-Skew Heap: clocks - 33324 seconds - 0.033324
+Binomial Heap: clocks - 32298 seconds - 0.032298
+Leftist Heap: clocks - 25006 seconds - 0.025006
+Skew Heap: clocks - 27387 seconds - 0.027387
 
 6500 operations:
-Binomial Heap: clocks - 23257 seconds - 0.023257
-Leftist Heap: clocks - 15567 seconds - 0.015567
-Skew Heap: clocks - 15212 seconds - 0.015212
+Binomial Heap: clocks - 49044 seconds - 0.049044
+Leftist Heap: clocks - 27223 seconds - 0.027223
+Skew Heap: clocks - 24410 seconds - 0.02441
 
 6600 operations:
-Binomial Heap: clocks - 45228 seconds - 0.045228
-Leftist Heap: clocks - 20595 seconds - 0.020595
-Skew Heap: clocks - 23279 seconds - 0.023279
+Binomial Heap: clocks - 36615 seconds - 0.036615
+Leftist Heap: clocks - 26216 seconds - 0.026216
+Skew Heap: clocks - 28612 seconds - 0.028612
 
 6700 operations:
-Binomial Heap: clocks - 44680 seconds - 0.04468
-Leftist Heap: clocks - 29881 seconds - 0.029881
-Skew Heap: clocks - 25405 seconds - 0.025405
+Binomial Heap: clocks - 43250 seconds - 0.04325
+Leftist Heap: clocks - 27992 seconds - 0.027992
+Skew Heap: clocks - 28857 seconds - 0.028857
 
 6800 operations:
-Binomial Heap: clocks - 21862 seconds - 0.021862
-Leftist Heap: clocks - 13698 seconds - 0.013698
-Skew Heap: clocks - 14924 seconds - 0.014924
+Binomial Heap: clocks - 69136 seconds - 0.069136
+Leftist Heap: clocks - 45498 seconds - 0.045498
+Skew Heap: clocks - 42560 seconds - 0.04256
 
 6900 operations:
-Binomial Heap: clocks - 50727 seconds - 0.050727
-Leftist Heap: clocks - 30386 seconds - 0.030386
-Skew Heap: clocks - 30051 seconds - 0.030051
+Binomial Heap: clocks - 56279 seconds - 0.056279
+Leftist Heap: clocks - 36626 seconds - 0.036626
+Skew Heap: clocks - 38339 seconds - 0.038339
 
 7000 operations:
-Binomial Heap: clocks - 46878 seconds - 0.046878
-Leftist Heap: clocks - 24449 seconds - 0.024449
-Skew Heap: clocks - 29119 seconds - 0.029119
+Binomial Heap: clocks - 49455 seconds - 0.049455
+Leftist Heap: clocks - 29931 seconds - 0.029931
+Skew Heap: clocks - 32325 seconds - 0.032325
 
 7100 operations:
-Binomial Heap: clocks - 37692 seconds - 0.037692
-Leftist Heap: clocks - 28823 seconds - 0.028823
-Skew Heap: clocks - 19183 seconds - 0.019183
+Binomial Heap: clocks - 65718 seconds - 0.065718
+Leftist Heap: clocks - 55057 seconds - 0.055057
+Skew Heap: clocks - 54833 seconds - 0.054833
 
 7200 operations:
-Binomial Heap: clocks - 44044 seconds - 0.044044
-Leftist Heap: clocks - 30390 seconds - 0.03039
-Skew Heap: clocks - 32782 seconds - 0.032782
+Binomial Heap: clocks - 80079 seconds - 0.080079
+Leftist Heap: clocks - 49125 seconds - 0.049125
+Skew Heap: clocks - 49592 seconds - 0.049592
 
 7300 operations:
-Binomial Heap: clocks - 29544 seconds - 0.029544
-Leftist Heap: clocks - 23580 seconds - 0.02358
-Skew Heap: clocks - 23236 seconds - 0.023236
+Binomial Heap: clocks - 54332 seconds - 0.054332
+Leftist Heap: clocks - 39708 seconds - 0.039708
+Skew Heap: clocks - 37084 seconds - 0.037084
 
 7400 operations:
-Binomial Heap: clocks - 52622 seconds - 0.052622
-Leftist Heap: clocks - 32172 seconds - 0.032172
-Skew Heap: clocks - 38893 seconds - 0.038893
+Binomial Heap: clocks - 46638 seconds - 0.046638
+Leftist Heap: clocks - 32285 seconds - 0.032285
+Skew Heap: clocks - 31623 seconds - 0.031623
 
 7500 operations:
-Binomial Heap: clocks - 42126 seconds - 0.042126
-Leftist Heap: clocks - 32741 seconds - 0.032741
-Skew Heap: clocks - 36401 seconds - 0.036401
+Binomial Heap: clocks - 60850 seconds - 0.06085
+Leftist Heap: clocks - 36263 seconds - 0.036263
+Skew Heap: clocks - 34086 seconds - 0.034086
 
 7600 operations:
-Binomial Heap: clocks - 42708 seconds - 0.042708
-Leftist Heap: clocks - 27724 seconds - 0.027724
-Skew Heap: clocks - 32729 seconds - 0.032729
+Binomial Heap: clocks - 44949 seconds - 0.044949
+Leftist Heap: clocks - 27533 seconds - 0.027533
+Skew Heap: clocks - 26798 seconds - 0.026798
 
 7700 operations:
-Binomial Heap: clocks - 74261 seconds - 0.074261
-Leftist Heap: clocks - 56472 seconds - 0.056472
-Skew Heap: clocks - 65236 seconds - 0.065236
+Binomial Heap: clocks - 47075 seconds - 0.047075
+Leftist Heap: clocks - 27032 seconds - 0.027032
+Skew Heap: clocks - 24455 seconds - 0.024455
 
 7800 operations:
-Binomial Heap: clocks - 42167 seconds - 0.042167
-Leftist Heap: clocks - 35814 seconds - 0.035814
-Skew Heap: clocks - 38022 seconds - 0.038022
+Binomial Heap: clocks - 55583 seconds - 0.055583
+Leftist Heap: clocks - 39389 seconds - 0.039389
+Skew Heap: clocks - 39489 seconds - 0.039489
 
 7900 operations:
-Binomial Heap: clocks - 67733 seconds - 0.067733
-Leftist Heap: clocks - 61116 seconds - 0.061116
-Skew Heap: clocks - 56923 seconds - 0.056923
+Binomial Heap: clocks - 53657 seconds - 0.053657
+Leftist Heap: clocks - 32181 seconds - 0.032181
+Skew Heap: clocks - 32695 seconds - 0.032695
 
 8000 operations:
-Binomial Heap: clocks - 43411 seconds - 0.043411
-Leftist Heap: clocks - 26815 seconds - 0.026815
-Skew Heap: clocks - 27777 seconds - 0.027777
+Binomial Heap: clocks - 55990 seconds - 0.05599
+Leftist Heap: clocks - 33385 seconds - 0.033385
+Skew Heap: clocks - 37240 seconds - 0.03724
 
 8100 operations:
-Binomial Heap: clocks - 40168 seconds - 0.040168
-Leftist Heap: clocks - 36452 seconds - 0.036452
-Skew Heap: clocks - 31705 seconds - 0.031705
+Binomial Heap: clocks - 49032 seconds - 0.049032
+Leftist Heap: clocks - 31677 seconds - 0.031677
+Skew Heap: clocks - 33128 seconds - 0.033128
 
 8200 operations:
-Binomial Heap: clocks - 35891 seconds - 0.035891
-Leftist Heap: clocks - 34343 seconds - 0.034343
-Skew Heap: clocks - 29771 seconds - 0.029771
+Binomial Heap: clocks - 76620 seconds - 0.07662
+Leftist Heap: clocks - 52844 seconds - 0.052844
+Skew Heap: clocks - 45433 seconds - 0.045433
 
 8300 operations:
-Binomial Heap: clocks - 40300 seconds - 0.0403
-Leftist Heap: clocks - 32315 seconds - 0.032315
-Skew Heap: clocks - 32602 seconds - 0.032602
+Binomial Heap: clocks - 62906 seconds - 0.062906
+Leftist Heap: clocks - 39210 seconds - 0.03921
+Skew Heap: clocks - 42322 seconds - 0.042322
 
 8400 operations:
-Binomial Heap: clocks - 33760 seconds - 0.03376
-Leftist Heap: clocks - 20252 seconds - 0.020252
-Skew Heap: clocks - 27144 seconds - 0.027144
+Binomial Heap: clocks - 45650 seconds - 0.04565
+Leftist Heap: clocks - 30352 seconds - 0.030352
+Skew Heap: clocks - 29614 seconds - 0.029614
 
 8500 operations:
-Binomial Heap: clocks - 46314 seconds - 0.046314
-Leftist Heap: clocks - 25405 seconds - 0.025405
-Skew Heap: clocks - 26761 seconds - 0.026761
+Binomial Heap: clocks - 45999 seconds - 0.045999
+Leftist Heap: clocks - 33456 seconds - 0.033456
+Skew Heap: clocks - 35975 seconds - 0.035975
 
 8600 operations:
-Binomial Heap: clocks - 40892 seconds - 0.040892
-Leftist Heap: clocks - 23557 seconds - 0.023557
-Skew Heap: clocks - 23406 seconds - 0.023406
+Binomial Heap: clocks - 53316 seconds - 0.053316
+Leftist Heap: clocks - 35731 seconds - 0.035731
+Skew Heap: clocks - 37746 seconds - 0.037746
 
 8700 operations:
-Binomial Heap: clocks - 75065 seconds - 0.075065
-Leftist Heap: clocks - 42712 seconds - 0.042712
-Skew Heap: clocks - 41055 seconds - 0.041055
+Binomial Heap: clocks - 73338 seconds - 0.073338
+Leftist Heap: clocks - 48297 seconds - 0.048297
+Skew Heap: clocks - 50368 seconds - 0.050368
 
 8800 operations:
-Binomial Heap: clocks - 59734 seconds - 0.059734
-Leftist Heap: clocks - 34062 seconds - 0.034062
-Skew Heap: clocks - 36767 seconds - 0.036767
+Binomial Heap: clocks - 81348 seconds - 0.081348
+Leftist Heap: clocks - 46411 seconds - 0.046411
+Skew Heap: clocks - 46074 seconds - 0.046074
 
 8900 operations:
-Binomial Heap: clocks - 65826 seconds - 0.065826
-Leftist Heap: clocks - 43473 seconds - 0.043473
-Skew Heap: clocks - 37863 seconds - 0.037863
+Binomial Heap: clocks - 49009 seconds - 0.049009
+Leftist Heap: clocks - 33181 seconds - 0.033181
+Skew Heap: clocks - 33730 seconds - 0.03373
 
 9000 operations:
-Binomial Heap: clocks - 52607 seconds - 0.052607
-Leftist Heap: clocks - 32732 seconds - 0.032732
-Skew Heap: clocks - 26087 seconds - 0.026087
+Binomial Heap: clocks - 44710 seconds - 0.04471
+Leftist Heap: clocks - 28181 seconds - 0.028181
+Skew Heap: clocks - 28176 seconds - 0.028176
 
 9100 operations:
-Binomial Heap: clocks - 49707 seconds - 0.049707
-Leftist Heap: clocks - 32739 seconds - 0.032739
-Skew Heap: clocks - 36943 seconds - 0.036943
+Binomial Heap: clocks - 66930 seconds - 0.06693
+Leftist Heap: clocks - 42653 seconds - 0.042653
+Skew Heap: clocks - 40047 seconds - 0.040047
 
 9200 operations:
-Binomial Heap: clocks - 61477 seconds - 0.061477
-Leftist Heap: clocks - 38325 seconds - 0.038325
-Skew Heap: clocks - 34029 seconds - 0.034029
+Binomial Heap: clocks - 77329 seconds - 0.077329
+Leftist Heap: clocks - 55725 seconds - 0.055725
+Skew Heap: clocks - 61298 seconds - 0.061298
 
 9300 operations:
-Binomial Heap: clocks - 45382 seconds - 0.045382
-Leftist Heap: clocks - 28896 seconds - 0.028896
-Skew Heap: clocks - 26621 seconds - 0.026621
+Binomial Heap: clocks - 67146 seconds - 0.067146
+Leftist Heap: clocks - 46258 seconds - 0.046258
+Skew Heap: clocks - 48176 seconds - 0.048176
 
 9400 operations:
-Binomial Heap: clocks - 59267 seconds - 0.059267
-Leftist Heap: clocks - 42009 seconds - 0.042009
-Skew Heap: clocks - 36579 seconds - 0.036579
+Binomial Heap: clocks - 87371 seconds - 0.087371
+Leftist Heap: clocks - 59614 seconds - 0.059614
+Skew Heap: clocks - 58141 seconds - 0.058141
 
 9500 operations:
-Binomial Heap: clocks - 84476 seconds - 0.084476
-Leftist Heap: clocks - 55474 seconds - 0.055474
-Skew Heap: clocks - 54374 seconds - 0.054374
+Binomial Heap: clocks - 61665 seconds - 0.061665
+Leftist Heap: clocks - 44543 seconds - 0.044543
+Skew Heap: clocks - 39128 seconds - 0.039128
 
 9600 operations:
-Binomial Heap: clocks - 47243 seconds - 0.047243
-Leftist Heap: clocks - 30740 seconds - 0.03074
-Skew Heap: clocks - 34731 seconds - 0.034731
+Binomial Heap: clocks - 89110 seconds - 0.08911
+Leftist Heap: clocks - 69064 seconds - 0.069064
+Skew Heap: clocks - 63732 seconds - 0.063732
 
 9700 operations:
-Binomial Heap: clocks - 54247 seconds - 0.054247
-Leftist Heap: clocks - 45688 seconds - 0.045688
-Skew Heap: clocks - 43034 seconds - 0.043034
+Binomial Heap: clocks - 78412 seconds - 0.078412
+Leftist Heap: clocks - 58124 seconds - 0.058124
+Skew Heap: clocks - 50892 seconds - 0.050892
 
 9800 operations:
-Binomial Heap: clocks - 54167 seconds - 0.054167
-Leftist Heap: clocks - 40410 seconds - 0.04041
-Skew Heap: clocks - 38842 seconds - 0.038842
+Binomial Heap: clocks - 111105 seconds - 0.111105
+Leftist Heap: clocks - 79675 seconds - 0.079675
+Skew Heap: clocks - 80717 seconds - 0.080717
 
 9900 operations:
-Binomial Heap: clocks - 58607 seconds - 0.058607
-Leftist Heap: clocks - 36083 seconds - 0.036083
-Skew Heap: clocks - 31831 seconds - 0.031831
+Binomial Heap: clocks - 73769 seconds - 0.073769
+Leftist Heap: clocks - 46923 seconds - 0.046923
+Skew Heap: clocks - 47750 seconds - 0.04775
 
 10000 operations:
-Binomial Heap: clocks - 62660 seconds - 0.06266
-Leftist Heap: clocks - 38334 seconds - 0.038334
-Skew Heap: clocks - 35668 seconds - 0.035668
+Binomial Heap: clocks - 68679 seconds - 0.068679
+Leftist Heap: clocks - 52749 seconds - 0.052749
+Skew Heap: clocks - 49581 seconds - 0.049581
 

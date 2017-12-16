@@ -80,46 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialHeap.cpp">
-			<Option target="IHeap"/>
-		</Unit>
 		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialHeap.h">
-			<Option target="IHeap"/>
-		</Unit>
-		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialTree.cpp">
-			<Option target="IHeap"/>
-		</Unit>
-		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialTree.h">
 			<Option target="IHeap"/>
 		</Unit>
 		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/IHeap.h">
 			<Option target="IHeap"/>
 		</Unit>
-		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.cpp">
-			<Option target="IHeap"/>
-		</Unit>
 		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.h">
 			<Option target="IHeap"/>
 		</Unit>
-		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistNode.cpp">
-			<Option target="IHeap"/>
-		</Unit>
-		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistNode.h">
-			<Option target="IHeap"/>
-		</Unit>
-		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.cpp">
-			<Option target="IHeap"/>
-		</Unit>
 		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.h">
-			<Option target="IHeap"/>
-		</Unit>
-		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewNode.cpp">
-			<Option target="IHeap"/>
-		</Unit>
-		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewNode.h">
-			<Option target="IHeap"/>
-		</Unit>
-		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandartHeap.cpp">
 			<Option target="IHeap"/>
 		</Unit>
 		<Unit filename="/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandartHeap.h">
