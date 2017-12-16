@@ -3,10 +3,13 @@
 
 CMakeFiles/IHeap.dir/main.cpp.o
  /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialHeap.h
+ /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/FunctionalTest.h
  /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/IHeap.h
+ /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LSHeap.h
  /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.h
+ /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/RandomTests.h
  /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.h
- /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandartHeap.h
+ /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandardHeap.h
  /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/main.cpp
  /Users/romanklimovitskiy/googletest/googletest/include/gtest/gtest-death-test.h
  /Users/romanklimovitskiy/googletest/googletest/include/gtest/gtest-message.h

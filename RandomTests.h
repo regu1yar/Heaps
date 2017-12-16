@@ -12,15 +12,9 @@
 #include "BinomialHeap.h"
 #include "LeftistHeap.h"
 #include "SkewHeap.h"
-#include "StandartHeap.h"
+#include "StandardHeap.h"
 #include "gtest/gtest.h"
 #include <time.h>
-
-static int HEAP_TYPES = 3;
-static int TEST_TYPES = 5;
-static int MIN_KEY = -1000;
-static int MAX_KEY = 1000;
-static int TESTS = 10000;
 
 enum HeapMethods {
     AddHeap,
@@ -30,7 +24,67 @@ enum HeapMethods {
     Meld
 };
 
-void testGeneration(int tests) {
+class HardTest : public ::testing::Test {
+public:
+    static const int HEAP_TYPES = 3;
+    static const int TEST_TYPES = 5;
+    static const int MIN_KEY = -1000;
+    static const int MAX_KEY = 1000;
+    static const int TESTS = 10000;
+
+protected:
+    std::vector<IHeap*> heaps[HEAP_TYPES];
+    std::vector<StandardHeap*> stdHeaps;
+
+    void SetUp() {
+        std::cout << "SET UP" << std::endl;
+    }
+
+    void TearDown() {
+        for(int i = 0; i < HEAP_TYPES; ++i) {
+            for(auto iter = heaps[i].rbegin(); iter != heaps[i].rend(); ++iter) {
+                delete *iter;
+            }
+        }
+        for(auto iter = stdHeaps.rbegin(); iter != stdHeaps.rend(); ++iter) {
+            delete *iter;
+        }
+        std::cout << "TEARED DOWN" << std::endl;
+    }
+
+    void callMethod(int heapNumber, HeapMethods method, int param1 = 0, int param2 = 0) {
+        switch(method) {
+            case AddHeap:
+                callAddHeap(heapNumber, param1);
+                break;
+            case Insert:
+                callInsert(heapNumber, param1, param2);
+                break;
+            case GetMin:
+                callGetMin(heapNumber, param1);
+                break;
+            case ExtractMin:
+                callExtractMin(heapNumber, param1);
+                break;
+            case Meld:
+                callMeld(heapNumber, param1, param2);
+                break;
+            default:
+                std::cout << "NO SUCH METHOD " << method << std::endl;
+        }
+    }
+
+    void callAddHeap(int heapNumber, int key);
+    void callInsert(int heapNumber, int index, int key);
+    void callGetMin(int heapNumber, int index);
+    void callExtractMin(int heapNumber, int index);
+    void callMeld(int heapNumber, int index1, int index2);
+
+public:
+    void testGeneration(int tests);
+};
+
+void HardTest::testGeneration(int tests) {
     std::filebuf testBuf;
     testBuf.open("tests.txt", std::ios::out);
     std::ostream testStream(&testBuf);
@@ -92,56 +146,6 @@ void testGeneration(int tests) {
     testBuf.close();
 }
 
-class HardTest : public ::testing::Test {
-protected:
-    std::vector<IHeap*> heaps[HEAP_TYPES];
-    std::vector<StandartHeap*> stdHeaps;
-
-    void SetUp() {
-        std::cout << "SET UP" << std::endl;
-    }
-
-    void TearDown() {
-        for(int i = 0; i < HEAP_TYPES; ++i) {
-            for(auto iter = heaps[i].rbegin(); iter != heaps[i].rend(); ++iter) {
-                delete *iter;
-            }
-        }
-        for(auto iter = stdHeaps.rbegin(); iter != stdHeaps.rend(); ++iter) {
-            delete *iter;
-        }
-        std::cout << "TEARED DOWN" << std::endl;
-    }
-
-    void callMethod(int heapNumber, HeapMethods method, int param1 = 0, int param2 = 0) {
-        switch(method) {
-            case AddHeap:
-                callAddHeap(heapNumber, param1);
-                break;
-            case Insert:
-                callInsert(heapNumber, param1, param2);
-                break;
-            case GetMin:
-                callGetMin(heapNumber, param1);
-                break;
-            case ExtractMin:
-                callExtractMin(heapNumber, param1);
-                break;
-            case Meld:
-                callMeld(heapNumber, param1, param2);
-                break;
-            default:
-                std::cout << "NO SUCH METHOD " << method << std::endl;
-        }
-    }
-
-    void callAddHeap(int heapNumber, int key);
-    void callInsert(int heapNumber, int index, int key);
-    void callGetMin(int heapNumber, int index);
-    void callExtractMin(int heapNumber, int index);
-    void callMeld(int heapNumber, int index1, int index2);
-};
-
 void HardTest::callAddHeap(int heapNumber, int key) {
     IHeap* newHeap;
     if(heapNumber == 0) {
@@ -152,7 +156,7 @@ void HardTest::callAddHeap(int heapNumber, int key) {
         newHeap = new SkewHeap;
     }
     heaps[heapNumber].push_back(newHeap);
-    StandartHeap* newStdHeap = new StandartHeap;
+    StandardHeap* newStdHeap = new StandardHeap;
     stdHeaps.push_back(newStdHeap);
     heaps[heapNumber].back()->insert(key);
     stdHeaps.back()->insert(key);
@@ -255,7 +259,7 @@ TEST_F(HardTest, MeldTest) {
         IHeap* binomialHeap = new BinomialHeap();
         IHeap* leftistHeap = new LeftistHeap();
         IHeap* skewHeap = new SkewHeap();
-        StandartHeap* stdHeap = new StandartHeap();
+        StandardHeap* stdHeap = new StandardHeap();
         for(size_t j = 0; j < 100; ++j) {
             int key = rand() % (MAX_KEY - MIN_KEY + 1) + MIN_KEY;
             binomialHeap->insert(key);

@@ -11,12 +11,12 @@
 #include <cassert>
 #include "IHeap.h"
 
-class StandartHeap : public IHeap {
+class StandardHeap : public IHeap {
 private:
     std::multiset<int> data;
 
 public:
-    StandartHeap();
+    StandardHeap();
     virtual void insert(int key);
     virtual int getMin() const;
     virtual void extractMin();
@@ -24,27 +24,27 @@ public:
     virtual void print() const;
     virtual void clear();
     virtual bool empty() const;
-    virtual ~StandartHeap();
+    virtual ~StandardHeap();
 };
 
-StandartHeap::StandartHeap() { }
+StandardHeap::StandardHeap() { }
 
-void StandartHeap::insert(int key) {
+void StandardHeap::insert(int key) {
     data.insert(key);
 }
 
-int StandartHeap::getMin() const {
+int StandardHeap::getMin() const {
     assert(!data.empty());
     return *data.begin();
 }
 
-void StandartHeap::extractMin() {
+void StandardHeap::extractMin() {
     assert(!data.empty());
     data.erase(data.begin());
 }
 
-void StandartHeap::meld(IHeap &heap) {
-    StandartHeap& newHeap = dynamic_cast<StandartHeap&>(heap);
+void StandardHeap::meld(IHeap &heap) {
+    StandardHeap& newHeap = dynamic_cast<StandardHeap&>(heap);
     if(this == &newHeap || newHeap.empty()) {
         return;
     }
@@ -55,18 +55,18 @@ void StandartHeap::meld(IHeap &heap) {
     data.insert(newHeap.data.begin(), newHeap.data.end());
 }
 
-void StandartHeap::print() const {
+void StandardHeap::print() const {
     for(auto iter = data.begin(); iter != data.end(); ++iter) {
         std::cout << *iter << ' ';
     }
     std::cout << std::endl;
 }
 
-void StandartHeap::clear() { data.clear(); }
+void StandardHeap::clear() { data.clear(); }
 
-bool StandartHeap::empty() const { return data.empty(); }
+bool StandardHeap::empty() const { return data.empty(); }
 
-StandartHeap::~StandartHeap() { }
+StandardHeap::~StandardHeap() { }
 
 
 #endif //IHEAP_STANDARTHEAP_H

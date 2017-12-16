@@ -9,38 +9,14 @@
 /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialHeap.h
 list
 -
-cassert
--
-IHeap.h
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/IHeap.h
-
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/IHeap.h
-
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.h
-cassert
--
-IHeap.h
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/IHeap.h
-
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.h
-iostream
+vector
 -
 cassert
 -
 IHeap.h
 /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/IHeap.h
 
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandartHeap.h
-iostream
--
-set
--
-cassert
--
-IHeap.h
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/IHeap.h
-
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/main.cpp
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/FunctionalTest.h
 iostream
 -
 vector
@@ -53,12 +29,70 @@ LeftistHeap.h
 /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.h
 SkewHeap.h
 /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.h
-StandartHeap.h
-/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandartHeap.h
+StandardHeap.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandardHeap.h
 gtest/gtest.h
 /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/gtest/gtest.h
 time.h
 -
+
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/IHeap.h
+
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LSHeap.h
+iostream
+-
+cassert
+-
+IHeap.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/IHeap.h
+
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.h
+LSHeap.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LSHeap.h
+
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/RandomTests.h
+iostream
+-
+vector
+-
+fstream
+-
+BinomialHeap.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/BinomialHeap.h
+LeftistHeap.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LeftistHeap.h
+SkewHeap.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.h
+StandardHeap.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandardHeap.h
+gtest/gtest.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/gtest/gtest.h
+time.h
+-
+
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.h
+iostream
+-
+cassert
+-
+LSHeap.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LSHeap.h
+
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/StandardHeap.h
+iostream
+-
+set
+-
+cassert
+-
+IHeap.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/IHeap.h
+
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/main.cpp
+FunctionalTest.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/FunctionalTest.h
+RandomTests.h
+/Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/RandomTests.h
 
 /Users/romanklimovitskiy/googletest/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h

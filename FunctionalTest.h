@@ -12,25 +12,26 @@
 #include "BinomialHeap.h"
 #include "LeftistHeap.h"
 #include "SkewHeap.h"
-#include "StandartHeap.h"
+#include "StandardHeap.h"
 #include "gtest/gtest.h"
 #include <time.h>
 
-static int HEAP_TYPES = 3;
-static int TEST_TYPES = 5;
-static int MIN_KEY = -1000;
-static int MAX_KEY = 1000;
-static int INSERTS_TESTS = 10000;
-static int INSERT_TEST_SHIFT = 100;
-static int EXTRACT_TESTS = 1000;
-static int EXTRACT_TESTS_SHIFT = 10;
-
 class FunctionalTest : public ::testing::Test {
+public:
+    static const int HEAP_TYPES = 3;
+    static const int TEST_TYPES = 5;
+    static const int MIN_KEY = -1000;
+    static const int MAX_KEY = 1000;
+    static const int INSERTS_TESTS = 10000;
+    static const int INSERT_TEST_SHIFT = 100;
+    static const int EXTRACT_TESTS = 1000;
+    static const int EXTRACT_TESTS_SHIFT = 10;
+
 protected:
     BinomialHeap binomialHeap;
     LeftistHeap leftistHeap;
     SkewHeap skewHeap;
-    StandartHeap stdHeap;
+    StandardHeap stdHeap;
 
     void SetUp() {
         std::cout << "SET UP" << std::endl;
