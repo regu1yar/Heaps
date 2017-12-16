@@ -14,7 +14,7 @@ const int MIN_KEY = -1000;
 const int MAX_KEY = 1000;
 const int TESTS = 10000;
 
-enum Method {
+enum HeapMethods {
     AddHeap,
     Insert,
     GetMin,
@@ -173,7 +173,7 @@ protected:
         std::cout << "TEARED DOWN" << std::endl;
     }
 
-    void callMethod(int heapNumber, Method method, int param1 = 0, int param2 = 0) {
+    void callMethod(int heapNumber, HeapMethods method, int param1 = 0, int param2 = 0) {
         switch(method) {
             case AddHeap:
                 callAddHeap(heapNumber, param1);
@@ -361,7 +361,7 @@ TEST_F(HardTest, RandomTest) {
             int test, param1, param2;
             long long begin = clock();
             while(in >> test >> param1 >> param2) {
-                callMethod(i, (Method)test, param1, param2);
+                callMethod(i, (HeapMethods)test, param1, param2);
             }
             long long end = clock();
             if(i == 0) {
