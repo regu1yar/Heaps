@@ -12,55 +12,55 @@
 
 class Node {
 private:
-    int key;
-    int rank = 0;
-    Node* leftNode;
-    Node* rightNode;
+    int key_;
+    int rank_ = 0;
+    Node* leftNode_;
+    Node* rightNode_;
 
 public:
     Node(int key, Node* node1 = nullptr, Node* node2 = nullptr, int rank = 0);
     void update();
     void swapChildren();
-    int getKey() const { return key; }
-    Node* getRightNode() const { return rightNode; }
-    void setRightNode(Node* node) { rightNode = node; }
+    int getKey() const { return key_; }
+    Node* getRightNode() const { return rightNode_; }
+    void setRightNode(Node* node) { rightNode_ = node; }
     void print();
 
     friend class LSHeap;
 };
 
 Node::Node(int key, Node *node1,
-                         Node *node2, int rank) : key(key), leftNode(node1),
-                                                                rightNode(node2), rank(rank) {}
+                         Node *node2, int rank) : key_(key), leftNode_(node1),
+                                                                rightNode_(node2), rank_(rank) {}
 
 void Node::update() {
-    if(leftNode == nullptr) {
-        std::swap(leftNode, rightNode);
-        rank = 1;
+    if(leftNode_ == nullptr) {
+        std::swap(leftNode_, rightNode_);
+        rank_ = 1;
         return;
     }
-    if(rightNode == nullptr) {
-        rank = 1;
+    if(rightNode_ == nullptr) {
+        rank_ = 1;
         return;
     }
-    if(leftNode->rank < rightNode->rank) {
-        std::swap(leftNode, rightNode);
+    if(leftNode_->rank_ < rightNode_->rank_) {
+        std::swap(leftNode_, rightNode_);
     }
-    rank = rightNode->rank + 1;
+    rank_ = rightNode_->rank_ + 1;
 }
 
 void Node::swapChildren() {
-    std::swap(leftNode, rightNode);
+    std::swap(leftNode_, rightNode_);
 }
 
 void Node::print() {
     std::cout << '(';
-    if(leftNode != nullptr) {
-        leftNode->print();
+    if(leftNode_ != nullptr) {
+        leftNode_->print();
     }
-    std::cout << ' ' << key << ' ';
-    if(rightNode != nullptr) {
-        rightNode->print();
+    std::cout << ' ' << key_ << ' ';
+    if(rightNode_ != nullptr) {
+        rightNode_->print();
     }
     std::cout << ')';
 }
@@ -68,7 +68,7 @@ void Node::print() {
 
 class LSHeap : public IHeap {
 private:
-    Node* root;
+    Node* root_;
 
     virtual Node* systemMeld(Node* node1, Node* node2) = 0;
     void clearNode(Node* node);
@@ -85,27 +85,27 @@ public:
     virtual ~LSHeap();
 };
 
-LSHeap::LSHeap() : root(nullptr) { }
+LSHeap::LSHeap() : root_(nullptr) { }
 
 void LSHeap::clearNode(Node *node) {
     if(node != nullptr) {
-        clearNode(node->leftNode);
-        clearNode(node->rightNode);
+        clearNode(node->leftNode_);
+        clearNode(node->rightNode_);
         delete node;
     }
 }
 
-void LSHeap::insert(int key) { root = systemMeld(root, new Node(key)); }
+void LSHeap::insert(int key) { root_ = systemMeld(root_, new Node(key)); }
 
 int LSHeap::getMin() const {
-    assert(root != nullptr);
-    return root->key;
+    assert(root_ != nullptr);
+    return root_->key_;
 }
 
 void LSHeap::extractMin() {
-    assert(root != nullptr);
-    Node* oldRoot = root;
-    root = systemMeld(root->leftNode, root->rightNode);
+    assert(root_ != nullptr);
+    Node* oldRoot = root_;
+    root_ = systemMeld(root_->leftNode_, root_->rightNode_);
     delete oldRoot;
 }
 
@@ -114,22 +114,22 @@ void LSHeap::meld(IHeap &heap) {
     if(this == &heap) {
         return;
     }
-    root = systemMeld(root, newHeap.root);
-    newHeap.root = nullptr;
+    root_ = systemMeld(root_, newHeap.root_);
+    newHeap.root_ = nullptr;
 }
 
 void LSHeap::clear() {
-    clearNode(root);
-    root = nullptr;
+    clearNode(root_);
+    root_ = nullptr;
 }
 
 void LSHeap::print() const {
-    if(root != nullptr) {
-        root->print();
+    if(root_ != nullptr) {
+        root_->print();
     }
 }
 
-bool LSHeap::empty() const { return root == nullptr; }
+bool LSHeap::empty() const { return root_ == nullptr; }
 
 LSHeap::~LSHeap() { clear(); }
 

@@ -31,6 +31,7 @@ public:
     static const int MIN_KEY = -1000;
     static const int MAX_KEY = 1000;
     static const int TESTS = 10000;
+    static const int TESTS_SHIFT = 100;
 
 protected:
     std::vector<IHeap*> heaps[HEAP_TYPES];
@@ -288,6 +289,7 @@ TEST_F(HardTest, MeldTest) {
             }
             stdHeaps.erase(stdHeaps.begin() + heap2);
         }
+        std::cout << "HEAPS " << heap1 << ' ' << heap2 << " MELDED" << std::endl;
     }
     std::cout << "MELD TEST PASSED" << std::endl;
 }
@@ -297,7 +299,7 @@ TEST_F(HardTest, RandomTest) {
     timeBuf.open("time.txt", std::ios::out);
     std::ifstream in;
     std::ostream timeStream(&timeBuf);
-    for(int tests = TESTS / 100; tests <= TESTS; tests += TESTS / 100) {
+    for(int tests = TESTS / TESTS_SHIFT; tests <= TESTS; tests += TESTS / TESTS_SHIFT) {
         testGeneration(tests);
         timeStream << tests << " operations:" << std::endl;
         for(int i = 0 ; i < 3; ++i) {

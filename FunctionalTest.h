@@ -18,8 +18,6 @@
 
 class FunctionalTest : public ::testing::Test {
 public:
-    static const int HEAP_TYPES = 3;
-    static const int TEST_TYPES = 5;
     static const int MIN_KEY = -1000;
     static const int MAX_KEY = 1000;
     static const int INSERTS_TESTS = 10000;
@@ -47,7 +45,7 @@ protected:
 };
 
 TEST_F(FunctionalTest, InsertTest) {
-    for(size_t i = INSERTS_TESTS / INSERT_TEST_SHIFT; i <= INSERTS_TESTS; i += INSERTS_TESTS / INSERT_TEST_SHIFT) {
+    for(size_t i = INSERT_TEST_SHIFT; i <= INSERTS_TESTS; i += INSERT_TEST_SHIFT) {
         for(size_t j = 0; j < i; ++j) {
             int key = rand() % (MAX_KEY - MIN_KEY + 1) + MIN_KEY;
             binomialHeap.insert(key);
@@ -62,12 +60,12 @@ TEST_F(FunctionalTest, InsertTest) {
         leftistHeap.clear();
         skewHeap.clear();
         stdHeap.clear();
-        std::cout << "INSERT TEST " << i / (INSERTS_TESTS / INSERT_TEST_SHIFT) << " PASSED" << std::endl;
+        std::cout << "INSERT TEST " << i / INSERT_TEST_SHIFT << " PASSED" << std::endl;
     }
 }
 
 TEST_F(FunctionalTest, ExtractMinTest) {
-    for(size_t i = EXTRACT_TESTS / EXTRACT_TESTS_SHIFT; i <= EXTRACT_TESTS; i += EXTRACT_TESTS / EXTRACT_TESTS_SHIFT) {
+    for(size_t i = EXTRACT_TESTS_SHIFT; i <= EXTRACT_TESTS; i += EXTRACT_TESTS_SHIFT) {
         for(size_t j = 0; j < i; ++j) {
             int key = rand() % (MAX_KEY - MIN_KEY + 1) + MIN_KEY;
             binomialHeap.insert(key);
@@ -90,7 +88,7 @@ TEST_F(FunctionalTest, ExtractMinTest) {
         leftistHeap.clear();
         skewHeap.clear();
         stdHeap.clear();
-        std::cout << "EXTRACT TEST " << i / (EXTRACT_TESTS / EXTRACT_TESTS_SHIFT) << " PASSED" << std::endl;
+        std::cout << "EXTRACT TEST " << i / EXTRACT_TESTS_SHIFT << " PASSED" << std::endl;
     }
 }
 

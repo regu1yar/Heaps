@@ -13,8 +13,8 @@
 
 class BinomialTree {
 private:
-    int key;
-    std::vector<BinomialTree> children;
+    int key_;
+    std::vector<BinomialTree> children_;
 
 public:
     explicit BinomialTree(int key);
@@ -27,27 +27,27 @@ public:
     friend BinomialTree& meldTrees(BinomialTree &bTree1, BinomialTree &bTree2);
 };
 
-BinomialTree::BinomialTree(int key) : key(key) { }
+BinomialTree::BinomialTree(int key) : key_(key) { }
 
-BinomialTree::BinomialTree(const BinomialTree& bTree) : key(bTree.key), children(bTree.children) { }
+BinomialTree::BinomialTree(const BinomialTree& bTree) : key_(bTree.key_), children_(bTree.children_) { }
 
 BinomialTree& BinomialTree::operator=(const BinomialTree &bTree) {
     if(this == &bTree) {
         return *this;
     }
-    key = bTree.key;
-    children = bTree.children;
+    key_ = bTree.key_;
+    children_ = bTree.children_;
     return *this;
 }
 
 bool BinomialTree::operator<(const BinomialTree &b2) const {
-    return children.size() < b2.children.size();
+    return children_.size() < b2.children_.size();
 }
 
 void BinomialTree::print() const {
-    std::cout << key << ' ';
-    for(size_t i = 0; i < children.size(); ++i) {
-        children[i].print();
+    std::cout << key_ << ' ';
+    for(size_t i = 0; i < children_.size(); ++i) {
+        children_[i].print();
     }
 }
 
@@ -55,18 +55,18 @@ BinomialTree& meldTrees(BinomialTree &bTree1, BinomialTree &bTree2) {
     if(&bTree1 == &bTree2) {
         return bTree1;
     }
-    if(bTree1.key > bTree2.key) {
-        bTree2.children.push_back(bTree1);
+    if(bTree1.key_ > bTree2.key_) {
+        bTree2.children_.push_back(bTree1);
         return bTree2;
     } else {
-        bTree1.children.push_back(bTree2);
+        bTree1.children_.push_back(bTree2);
         return bTree1;
     }
 }
 
 class BinomialHeap : public IHeap {
 private:
-    std::list<BinomialTree> trees;
+    std::list<BinomialTree> trees_;
     std::list<BinomialTree>::const_iterator getMinIter() const;
 
 public:
@@ -87,19 +87,19 @@ BinomialHeap::BinomialHeap() { }
 
 BinomialHeap::BinomialHeap(int key) {
     BinomialTree firstTree(key);
-    trees.push_back(firstTree);
+    trees_.push_back(firstTree);
 }
 
 BinomialHeap::BinomialHeap(BinomialTree& tree) {
-    trees.clear();
-    trees.push_back(tree);
+    trees_.clear();
+    trees_.push_back(tree);
 }
 
 std::list<BinomialTree>::const_iterator BinomialHeap::getMinIter() const {
-    std::list<BinomialTree>::const_iterator iter = trees.begin();
+    std::list<BinomialTree>::const_iterator iter = trees_.begin();
     std::list<BinomialTree>::const_iterator min = iter;
-    while(iter != trees.end()) {
-        if(min->key > iter->key) {
+    while(iter != trees_.end()) {
+        if(min->key_ > iter->key_) {
             min = iter;
         }
         ++iter;
@@ -113,16 +113,16 @@ void BinomialHeap::insert(int key) {
 }
 
 int BinomialHeap::getMin() const {
-    return getMinIter()->key;
+    return getMinIter()->key_;
 }
 
 void BinomialHeap::extractMin() {
-    assert(!trees.empty());
+    assert(!trees_.empty());
     auto min = getMinIter();
     BinomialHeap minChildrenHeap;
-    std::list<BinomialTree> minChildren(min->children.begin(), min->children.end());
-    minChildrenHeap.trees = minChildren;
-    trees.erase(min);
+    std::list<BinomialTree> minChildren(min->children_.begin(), min->children_.end());
+    minChildrenHeap.trees_ = minChildren;
+    trees_.erase(min);
     meld(minChildrenHeap);
 }
 
@@ -132,33 +132,33 @@ void BinomialHeap::meld(IHeap& heap) {
         return;
     }
     if(empty()) {
-        trees = binHeap.trees;
+        trees_ = binHeap.trees_;
         return;
     }
-    trees.merge(binHeap.trees);
-    auto curr = --trees.end();
+    trees_.merge(binHeap.trees_);
+    auto curr = --trees_.end();
     auto prev = curr--;
-    while(prev != trees.begin()) {
-        while(prev != trees.end() && curr->children.size() == prev->children.size()) {
+    while(prev != trees_.begin()) {
+        while(prev != trees_.end() && curr->children_.size() == prev->children_.size()) {
             *curr = meldTrees(*curr, *prev);
-            trees.erase(prev);
+            trees_.erase(prev);
             prev = std::next(curr);
         }
         prev = curr--;
     }
 }
 
-void BinomialHeap::clear() { trees.clear(); }
+void BinomialHeap::clear() { trees_.clear(); }
 
 void BinomialHeap::print() const {
-    for(auto iter = trees.begin(); iter != trees.end(); ++iter) {
+    for(auto iter = trees_.begin(); iter != trees_.end(); ++iter) {
         std::cout << "TREE ";
         iter->print();
     }
     std::cout << std::endl;
 }
 
-bool BinomialHeap::empty() const { return trees.empty(); }
+bool BinomialHeap::empty() const { return trees_.empty(); }
 
 BinomialHeap::~BinomialHeap() { }
 
