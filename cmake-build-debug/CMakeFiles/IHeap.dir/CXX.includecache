@@ -71,10 +71,6 @@ time.h
 -
 
 /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/SkewHeap.h
-iostream
--
-cassert
--
 LSHeap.h
 /Users/romanklimovitskiy/Documents/Программирование/Продвинутый поток/IHeap/LSHeap.h
 

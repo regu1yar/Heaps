@@ -33,6 +33,8 @@ public:
     static const int TESTS = 10000;
     static const int TESTS_SHIFT = 100;
 
+    void testGeneration(int tests);
+
 protected:
     std::vector<IHeap*> heaps[HEAP_TYPES];
     std::vector<StandardHeap*> stdHeaps;
@@ -80,9 +82,6 @@ protected:
     void callGetMin(int heapNumber, int index);
     void callExtractMin(int heapNumber, int index);
     void callMeld(int heapNumber, int index1, int index2);
-
-public:
-    void testGeneration(int tests);
 };
 
 void HardTest::testGeneration(int tests) {
@@ -169,8 +168,8 @@ void HardTest::callAddHeap(int heapNumber, int key) {
 
 void HardTest::callInsert(int heapNumber, int index, int key) {
     if(index >= stdHeaps.size()) {
-        std::cout << "UNSUCCESSFUL INSERT(" << index << ") : SIZE == " << stdHeaps.size() << " <= " << index
-                  << " == INDEX" << std::endl;
+//        std::cout << "UNSUCCESSFUL INSERT(" << index << ") : SIZE == " << stdHeaps.size() << " <= " << index
+//                  << " == INDEX" << std::endl;
         return;
     }
     heaps[heapNumber][index]->insert(key);
@@ -183,12 +182,12 @@ void HardTest::callInsert(int heapNumber, int index, int key) {
 
 void HardTest::callGetMin(int heapNumber, int index) {
     if(index >= stdHeaps.size()) {
-        std::cout << "UNSUCCESSFUL GETMIN(" << index << ") : SIZE == " << stdHeaps.size() << " <= " << index
-                  << " == INDEX" << std::endl;
+//        std::cout << "UNSUCCESSFUL GETMIN(" << index << ") : SIZE == " << stdHeaps.size() << " <= " << index
+//                  << " == INDEX" << std::endl;
         return;
     }
     if(stdHeaps[index]->empty()) {
-        std::cout << "UNSUCCESSFUL GETMIN(" << index << ") : HEAP IS EMPTY" << std::endl;
+//        std::cout << "UNSUCCESSFUL GETMIN(" << index << ") : HEAP IS EMPTY" << std::endl;
         return;
     }
     int heapMin_getMin = heaps[heapNumber][index]->getMin();
@@ -199,12 +198,12 @@ void HardTest::callGetMin(int heapNumber, int index) {
 
 void HardTest::callExtractMin(int heapNumber, int index) {
     if(index >= stdHeaps.size()) {
-        std::cout << "UNSUCCESSFUL EXTRACTMIN(" << index << ") : SIZE == " << stdHeaps.size() << " <= "
-                  << index << " == INDEX" << std::endl;
+//        std::cout << "UNSUCCESSFUL EXTRACTMIN(" << index << ") : SIZE == " << stdHeaps.size() << " <= "
+//                  << index << " == INDEX" << std::endl;
         return;
     }
     if(stdHeaps[index]->empty()) {
-        std::cout << "UNSUCCESSFUL EXTRACTMIN(" << index << ") : HEAP IS EMPTY" << std::endl;
+//        std::cout << "UNSUCCESSFUL EXTRACTMIN(" << index << ") : HEAP IS EMPTY" << std::endl;
         return;
     }
     heaps[heapNumber][index]->extractMin();
@@ -224,13 +223,13 @@ void HardTest::callExtractMin(int heapNumber, int index) {
 
 void HardTest::callMeld(int heapNumber, int index1, int index2) {
     if(index1 >= stdHeaps.size()) {
-        std::cout << "UNSUCCESSFUL EXTRACTMIN(" << index1 << ") : SIZE == " << stdHeaps.size() << " <= "
-                  << index1 << " == INDEX" << std::endl;
+//        std::cout << "UNSUCCESSFUL EXTRACTMIN(" << index1 << ") : SIZE == " << stdHeaps.size() << " <= "
+//                  << index1 << " == INDEX" << std::endl;
         return;
     }
     if(index2 >= stdHeaps.size()) {
-        std::cout << "UNSUCCESSFUL EXTRACTMIN(" << index2 << ") : SIZE == " << stdHeaps.size() << " <= "
-                  << index2 << " == INDEX" << std::endl;
+//        std::cout << "UNSUCCESSFUL EXTRACTMIN(" << index2 << ") : SIZE == " << stdHeaps.size() << " <= "
+//                  << index2 << " == INDEX" << std::endl;
         return;
     }
     heaps[heapNumber][index1]->meld(*heaps[heapNumber][index2]);
@@ -299,7 +298,7 @@ TEST_F(HardTest, RandomTest) {
     timeBuf.open("time.txt", std::ios::out);
     std::ifstream in;
     std::ostream timeStream(&timeBuf);
-    for(int tests = TESTS / TESTS_SHIFT; tests <= TESTS; tests += TESTS / TESTS_SHIFT) {
+    for(int tests = TESTS_SHIFT; tests <= TESTS; tests += TESTS_SHIFT) {
         testGeneration(tests);
         timeStream << tests << " operations:" << std::endl;
         for(int i = 0 ; i < 3; ++i) {
@@ -323,6 +322,7 @@ TEST_F(HardTest, RandomTest) {
             stdHeaps.clear();
             in.close();
             in.clear();
+            std::cout << "RANDOM TEST " << tests / TESTS_SHIFT << " PASSED" << std::endl;
         }
         timeStream << std::endl;
     }
